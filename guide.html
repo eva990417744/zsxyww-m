@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>中山学院网络维护科</title>
+    <style>
+        html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+        body{font-family:"Microsoft YaHei";color:#fff;margin:0;padding:0}a{color:#fff}img{display:inline-block}h1{margin-bottom:10px;font-size:350%}h2{display:inline-block;vertical-align:top;font-size:190%;line-height:150%}h3{font-size:180%;line-height:150%}h4{font-size:160%}p{display:inline-block;vertical-align:top;text-align:left}#background_img{position: fixed;vertical-align: middle;z-index: -2;}#go_top{position:fixed;display:none;left:2%;bottom:2%}.background_shadow{position:fixed;width:100%;height:100%;background-image:url("./img/background-shadow.png");opacity:.35;z-index:-1}.guide{height:5000px;width:70%;min-width:900px;max-width:1100px;margin:auto}.guide h1{display:block;text-align:center}.guide span{font-size:100%}.guide p{display:block;margin:5px 0;font-size:120%}.guide ul{margin-left:30px}.guide ul li{margin-top:10px}.guide ul a{font-size:120%;text-decoration:none}.guide h4{margin:10px 0;color:#65ff61}.guide img{display:block;margin:10px auto}.blue{color:#00ebff}.guide a{color:aquamarine}.guide a:hover{color:aqua}.guide li{list-style-position:inside;list-style-type:disc}
+    </style>
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+<div class="background_shadow"></div>
+<img id="background_img" src="img/bg4.jpg">
+<div id="go_top"><a href="javascript:void(0)"><img src="img/arrow-up.png"></a></div>
+<div class="guide">
+    <h4 style="position: absolute;left: 2%"><a href="index.html">返回首页</a></h4>
+    <h1>中山学院校园网络指引</h1>
+    <h4>索引</h4>
+    <ul>
+        <li><a href="#preface">前言</a></li>
+        <li><a href="#enviroment">校园网络环境介绍</a></li>
+        <li><a href="#prepare1">电信电脑端上网前的准备</a></li>
+        <li><a href="#set1">电信电脑端设置上网(Windows)</a></li>
+        <li><a href="#set4">电信电脑端设置上网(OS X)</a></li>
+        <li><a href="#prepare3">移动及联通电脑端上网前的准备</a></li>
+        <li><a href="#set3">移动及联通电脑端设置上网</a></li>
+        <li><a href="#prepare2">电信手机端上网前的准备</a></li>
+        <li><a href="#set2">电信手机端设置上网</a></li>
+        <li><a href="#client">电信新客户端功能介绍</a></li>
+        <li><a href="#fix">电信客户端常见问题处理</a></li>
+        <li><a href="#fix1">移动/联通 PPPOE 常见问题处理</a></li>
+        <li><a href="#method">网络故障报修方式</a></li>
+        <li><a href="#join1">加入我们网络维护科</a></li>
+    </ul>
+    <h4 id="preface">前言</h4>
+    <p>在文档的开始处，先要说一个好消息：<span class="blue">现在手机F-Young和电脑电信账户可以同时登陆了。</span></p>
+    <p>
+        前言开始23333，本文档由中山学院网络维护科编写，旨在帮助中山学院的学子了解如何设置上网、电信新客户端的一些新功能、常见问题的处理及网络故障的报修方式。对于这份文档，我们会尽全力避免出错且及时更新，如果您发现我们的文档有错误的地方（该文档出错的原因主要是由于软件更新等情况，导致出现解决方法失效），请和我们联系，以防止他人踏坑。</p>
+    <p>温馨提示：页面左下方有置顶按钮</p>
+    <h4 id="enviroment">校园网络环境介绍</h4>
+    <p>首先介绍一下中山学院的校园网络环境。学校的有线网络分各个宿舍区，中国电信全面覆盖所有宿舍；中国移动在香晖苑，凤翔宿舍区可以选择；中国联通只覆盖了香晖苑这一个宿舍区。办理宽带要先搞清楚自己宿舍所覆盖的运营商哦。</p>
+    <img src="img/guide39.png">
+    <p>其次是校园的无线环境，全校都有天翼F-Young的WIFI覆盖，使用电信的宽带账号登录手机客户端可以上网。部分宿舍存在CMCC和ChinaNet 两种无线网络，对应的账号资费请自行询问移动，电信运营商。</p>
+    <h4 id="prepare1">电信电脑端上网前的准备</h4>
+    <p>首先看看宿舍有没有这样一个东西“交换机”（如下图），同时检查它的小电源还在不在。（只有香晖苑不需要）</p>
+    <img src="img/guide0.jpg" style="width:500px;height: 350px;">
+    <p>如果没有的话可以去实验楼B207信息中心领取交换机，确认完好可用后，按照下图将其连接。</p>
+    <img src="img/guide1.png">
+    <p>连接完毕后，我们的准备工作就告一段落了。</p>
+    <h4 id="set1">电信电脑端设置上网(Windows)</h4>
+    <p>当你的电脑正确连接网线时，会直接弹出一个页面，若是没有弹出，则需要在设置中选择<span class="blue">自动获取ip</span>。</p>
+    <p>1.打开网络与共享中心:打开电脑，右下角找到这样一个图标<span style="height: 20px"><img src="img/guide2.png" style="display: inline-block;"></span>，右键一下，然后点击“打开网络和共享中心”。</p>
+    <p>2.选择更改配置器设置:</p>
+    <img src="img/guide3.png">
+    <p>3.鼠标右键点击以太网选择 属性栏</p>
+    <img src="img/guide4.png">
+    <p>4.选择ipv4的属性</p>
+    <img src="img/guide5.png" style="height: 450px">
+    <p>5.随后点击<span class="blue">自动获取IP和自动获取DNS</span>即完成自动获取IP了</p>
+    <img src="img/guide6.png" style="height: 450px;">
+    <p>也可以在浏览器中访问http://zsteduapp.10000.gd.cn/index.html <span><a href="http://zsteduapp.10000.gd.cn/index.html">传送门</a></span>。弹出页面后点击按钮（如下图）
+    </p>
+    <img src="img/guide7.png">
+    <p>根据提示，下载与你的电脑系统对应的客户端程序。</p>
+    <img src="img/guide8.png">
+    <p>下载并安装，打开天翼校园，你将会看到这样的画面：</p>
+    <img src="img/guide9.png" style="height: 450px">
+    <p>正确输入你的账号密码就可以上网啦。</p>
+    <p>注意：电信为了保证用网质量的良好，关闭了常用的PPPoE上网方式，所以是<span class="blue">不能设置路由器上网的，同时也是不能使用自带拨号软件等上网的</span>，如果想要使用WIFI，可以连接覆盖全校的F-Young无线网络，请看下文，手机客户端的登录。
+    </p>
+    <h4 id="set4">电信电脑端设置上网(OS X)</h4>
+    <p class="blue">安装</p>
+    <p>打开下载页面，点击下载mac版本</p>
+    <img src="img/guide40.png">
+    <p>在dock右边找到下载并点击</p>
+    <img src="img/guide41.png">
+    <p>找到客户端图标并拖拽到桌面</p>
+    <img src="img/guide42.jpg" style="height: 450px;">
+    <p>在屏幕左上角点击apple标志打开菜单，打开 系统偏好设置</p>
+    <img src="img/guide43.png">
+    <p>打开 安全性与隐私</p>
+    <img src="img/guide44.png" style="height: 450px;">
+    <p>在窗口左下角点击小锁头图标</p>
+    <img src="img/guide45.png">
+    <p>输入用户密码解锁</p>
+    <img src="img/guide46.png">
+    <p>勾选任何来源，并且允许</p>
+    <img src="img/guide47.png" style="height: 450px;">
+    <p>在桌面找到执行程序双击运行</p>
+    <img src="img/guide48.png">
+    <p>在弹出的安全提示点击打开</p>
+    <img src="img/guide49.png">
+    <p>回到设置勾选原来的Mac App Store 和被认可的开发者选项，并点击左下角小锁头防止更改。</p>
+    <img src="img/guide50.png" style="height: 450px;">
+    <p>填写账号密码并登陆</p>
+    <img src="img/guide51.png" style="height: 450px;">
+    <p class="blue">出现非校园客户端网络认证环境</p>
+    <img src="img/guide52.png" style="height: 450px;">
+    <p>一，拥有以太网转USB或雷电转换器</p>
+    <p>打开系统设置，选择网络</p>
+    <img src="img/guide53.png" style="height: 450px;">
+    <p>在左方选择以太网</p>
+    <img src="img/guide54.png" style="height: 450px;">
+    <p>如果 配置ipv4 出现手动选项，则调回DHCP</p>
+    <img src="img/guide55.png">
+    <p>点击应用</p>
+    <img src="img/guide56.png" style="height: 450px;">
+    <p>等待出现正确的IP</p>
+    <img src="img/guide57.png">
+    <p>如果没有找到对应以太网选项</p>
+    <p>按住option√键，点击屏幕左上角apple图标并进入系统信息</p>
+    <p>在左侧列表选择usb，看一看设备中有没有usb网卡（无法编写雷电接口教程，应该相似）</p>
+    <img src="img/guide58.png" style="height: 450px;">
+    <p>没有的话：<br>
+        1.	网卡坏了<br>
+        2.	买到了不是免驱的网卡，照说明书下载驱动
+    </p>
+    <p>有的话，回到设置，点击</p>
+    <img src="img/guide59.png" style="height: 450px;">
+    <p>选择接口列表选择usb以太网，并点击创建</p>
+    <img src="img/guide60.png">
+    <p>点击应用</p>
+    <img src="img/guide61.png" style="height: 450px;">
+    <p>等几秒</p>
+    <img src="img/guide62.png" style="height: 450px;">
+    <p>之后再试试连接吧</p>
+    <p>二：没有那种设备</p>
+    <p>点击右上角wifi图标连接f yong</p>
+    <img src="img/guide63.png">
+    <p>之后正常进行客户端连接</p>
+    <p>如果搜索不到那个，那就安利买一个吧！</p>
+    <p class="blue">附加一：定义DNS</p>
+    <p>打开系统偏好设置-网络-选择对应网卡，点击高级</p>
+    <img src="img/guide64.png" style="height: 450px;">
+    <p>在dns标签中的dns服务器列表中，通过+和-按钮修改dns</p>
+    <img src="img/guide65.png" style="height: 450px;">
+    <p class="blue">附加二：用户不满意把客户端放在桌面上</p>
+    <p>在dock打开finder</p>
+    <img src="img/guide66.png">
+    <p>通过左侧列表进入应用程序，并将客户端程序拖入</p>
+    <img src="img/guide67.png" style="height: 450px;">
+    <p>之后就可以在Launchpad中打开</p>
+    <img src="img/guide68.png">
+    <img src="img/guide69.png" style="height: 450px;">
+    <p class="blue">附加三：设置开机启动</p>
+    <p>打开客户端后，激活客户端窗口，并按下command +，<br>
+        或
+    </p>
+    <img src="img/guide70.png">
+    <p>激活系统启动后自动启动</p>
+    <img src="img/guide71.png">
+    <p class="blue">附加四：卸载</p>
+    <p>在dock中右键客户端图标点击退出（如果没启动可以忽略）</p>
+    <img src="img/guide72.png">
+    <p>找到可执行文件拖入废纸篓</p>
+    <img src="img/guide73.png">
+    <p>或者按<span style="height: 20px"><img src="img/guide74.png" style="display: inline-block"></span></p>
+    <p class="blue">附加五：可能遇到无密码用户无法解锁设置选项</p>
+    <p>注：这可能是系统BUG，我至今遇到过一次</p>
+    <p>打开系统设置，进入用户与群组</p>
+    <img src="img/guide75.png" style="height: 450px;">
+    <p>选择当前用户并点击更改密码</p>
+    <img src="img/guide76.png" style="height: 450px;">
+    <p>点击更改密码</p>
+    <img src="img/guide77.png">
+    <p>随便输入个新密码，比如123，并点击更改密码。</p>
+    <img src="img/guide78.png">
+    <p>接下来就可以正常解锁设置，但要记得操作完成回到这里，旧密码填写随便输入的密码，新密码不输入并点击更改密码来删掉刚才创建的密码</p>
+    <h4 id="prepare3">移动及联通电脑端上网前的准备</h4>
+    <p>首先看看宿舍有没有这样一个东西“交换机”（如下图），同时检查它的小电源还在不在。（只有香晖苑不需要）</p>
+    <img src="img/guide0.jpg" style="width:500px;height: 350px;">
+    <p>如果没有的话可以去实验楼B207信息中心领取交换机，确认完好可用后，按照下图将其连接。</p>
+    <img src="img/guide1.png">
+    <p>连接完毕后，我们的准备工作就告一段落了。</p>
+    <h4 id="set3">移动及联通电脑端设置上网</h4>
+    <p>在相关营业厅办理好你的宽带套餐之后，请务必保存好单据，牢记自己的宽带账号密码。</p>
+    <p>1.打开网络与共享中心:打开电脑，右下角找到这样一个图标<span style="height: 20px"><img src="img/guide2.png" style="display: inline-block;"></span>，右键一下，然后点击“打开网络和共享中心”。</p>
+    <p>在出现的窗口中点击“设置新的连接和网络”（如下图）</p>
+    <img src="img/guide36.png">
+    <p>然后点击“连接到Internet”（如下图）</p>
+    <img src="img/guide37.png">
+    <p>在接下来的窗口中，选择“宽带（PPPoE）”，然后输入你办理的宽带账号密码，确认后就可以上网了。</p>
+    <img src="img/guide38.png">
+    <p>这里要注意一下：移动用户的账号格式是手机号码末尾加上@139.gd，密码默认为身份证后六位 ，若有x就往前推一位，另外有个别用户密码是手机号码后六位。</p>
+    <p>联通账号的格式为ZSZJLANXXXXXXXXXX@16900.gd  密码会由联通人员告知。</p>
+    <h4 id="prepare2">电信手机端上网前的准备</h4>
+    <p>在WIFI页面中连接F-Young网络。</p>
+    <img src="img/guide10.png" style="height: 500px">
+    <p>然后会自动弹出一个页面，未弹出的请访问：http://zsteduapp.10000.gd.cn/index.html?schoolid=221 <span><a
+            href="http://zsteduapp.10000.gd.cn/index.html?schoolid=221">传送门</a></span>。下载对应手机系统的客户端安装即可。</p>
+    <h4 id="set2">电信手机端设置上网</h4>
+    <p>打开下载好的客户端（如下图），点击登录输入账号密码，即可使用wifi上网啦。</p>
+    <img src="img/guide11.png" style="height: 500px;">
+    <p>若是无法登陆，请检查账号密码的正确性，返回上图客户端首页，点击右上角问号，可打开以下帮助指引页面，这个页面列出了一些登陆常遇到的错误和代码，以及解决方法。根据登陆的错误提示，可以解决您的常见问题。</p>
+    <p>关闭客户端时，请选择后台运行，若系统安装清理软件，例如（猎豹清理大师，360安全大师，腾讯管家等），请将天翼客户端添加到白名单中，以防止系统后台清理时导致天翼客户端非正常关闭发生断网。</p>
+    <h4 id="client">电信新客户端功能介绍</h4>
+    <p><span class="blue">功能1：网络检测</span>：用于网络无法连接时使用，检测异常</p>
+    <img src="img/guide12.png" style="height: 500px;">
+    <p><span class="blue">功能2：工具栏之上网终端管理</span>：用来查询登陆终端信息，可以及时看看自己的账号有没有被盗。</p>
+    <img src="img/guide13.png" style="height: 500px;">
+    <img src="img/guide14.png" style="height: 500px;">
+    <p><span class="blue">功能3：密码修改</span>：当点击修改密码时，客户端会调用系统默认浏览器，跳转到修改密码页面，按照页面提示就可以完成密码修改。</p>
+    <img src="img/guide15.png" style="height: 500px">
+    <p><span class="blue">功能4：在线充值</span>：提供足不出户就能在线充值的服务。</p>
+    <p>1.选择所在区域，输入缴费账号</p>
+    <img src="img/guide16.jpg" style="height: 500px;">
+    <p>2.选择充值金额</p>
+    <img src="img/guide17.jpg" style="height: 500px">
+    <p>3.提交充值订单</p>
+    <img src="img/guide18.png" style="height: 500px">
+    <p>4.选择支付方式并完成充值</p>
+    <img src="img/guide19.jpg" style="height: 500px;">
+    <p><span class="blue">功能5：校园免费上网体验</span>：校园客户端还新增了校园免费上网体验帐号申请和登录功能，可以在办套餐之前每天体验一小时哦。异网或非融合用户可通过天翼校园客户端申请免费上网体验帐号，免费上网体验用户从帐号申请成功之日起30天内，每天免费体验上网一个小时。
+    </p>
+    <p>下载客户端后，点击登录按钮下方的免费体验账号申请，填写对应的表格提交就可以啦。</p>
+    <img src="img/guide20.png" style="width: 100%;">
+    <p>手机端也是一样的流程哦，点击下方的体验申请，填写对应信息即可。</p>
+    <img src="img/guide21.png" style="width: 100%">
+    <h4 id="fix">电信客户端常见问题处理</h4>
+    <p><span class="blue">无效的用户名、密码</span>： 可能是您的账号密码输入错误或欠费，请核查您的账户。</p>
+    <p><span class="blue">帐号状态异常，请咨询校园营业厅</span>：帐号为暂停态或注销态</p>
+    <p><span class="blue">客户端安装时长时间未完成</span>： 请完全卸载客户端，重启后再进行安装。</p>
+    <p><span class="blue">获取不到IP或物理地址</span>：确认网线连接正常，没有使用路由器，并且连接在正确的WIFI或端口上（连接F-Young或者电信端口），可重新插拔网线再次尝试。若检查无误，尝试按照上文无法弹出页面的解决方法，将IP地址与DNS设为自动获取。
+    </p>
+    <p><span class="blue">连接请求失败或超时</span>： 一般为网络问题，请尝试多次连接。</p>
+    <p><span class="blue">检测到与XXX共享软件或虚拟机冲突</span>：</p>
+    <img src="img/guide22.jpg" style="height: 500px">
+    <p>确认您没有安装使用WIFI共享软件，若有请关闭，完全卸载并重启电脑再连接网络。</p>
+    <p>如果还是不行，请依次检查以下位置有无wifi软件残留</p>
+    <p>程序表里面有无与wifi软件相关的程序或者同一个wifi软件公司出品的插件</p>
+    <img src="img/guide23.png" style="width: 100%">
+    <p>服务里面有没有与wifi软件相关的服务，有请右键属性停止并且禁用</p>
+    <img src="img/guide24.png" style="height: 500px">
+    <img src="img/guide25.png" style="height: 500px">
+    <p>本地连接里面有无与wifi软件相关的协议，如果有，右键卸载</p>
+    <img src="img/guide26.png" style="height: 500px">
+    <p>设备管理器里面网络适配器看有没有与wifi软件相关的驱动，如有右键卸载</p>
+    <img src="img/guide27.png" style="height: 500px">
+    <p><span class="blue">天翼客户端拨号服务异常</span>：</p>
+    <p>1、首先检查有没有安装WIFI共享软件，有的话将其卸载，重启后尝试重新登录。</p>
+    <p>2、尝试关闭杀毒软件后重新登录。</p>
+    <p>3、尝试卸载客户端重新安装后登录</p>
+    <p>4、左键点击右下角的时间，点击时间与日期设置</p>
+    <img src="img/guide28.png">
+    <p>在弹出的页面中</p>
+    <img src="img/guide29.png">
+    <p>时间同步成功后，再次连接客户端。</p>
+    <p><span class="blue">连接成功后可以登录QQ等软件，无法打开网页</span>：DNS错误，按照上图IP地址错误的指引，确认是否勾选自动获取DNS地址，确认无误后。同时按下“Win键”（键盘上的微软图标键，一般在左下角Ctrl与Alt之间）+
+        “R键”，在弹出的窗口中输入cmd并回车</p>
+    <img src="img/guide30.png">
+    <p>在弹出的黑色代码窗口中输入：ipconfig /flushdns 命令，然后回车</p>
+    <img src="img/guide31.png" style="height: 500px">
+    <p>重启之后再次上网就可以了。</p>
+    <p class="blue">如果以上指南仍然无法解决您的问题，请参照下文方法报修校园网络维护科。</p>
+    <h4 id="fix1">移动/联通 PPPOE 常见问题处理</h4>
+    <p><span class="blue">错误代码691</span>：账号错误，请检查账号密码是否正确，以及账号是否欠费</p>
+    <p><span class="blue">错误代码651</span>：线路问题，请检查右下角网络图标是否正常，网线是否牢靠，尝试重新插拔网线电脑端口及墙面端口，若无法解决请联系网络维护科报修。</p>
+    <p><span class="blue">错误代码629</span>：虚假的错误代码，请反复重拨，待其变化。</p>
+    <p class="blue">如果以上指南仍然无法解决您的问题，请参照下文方法报修校园网络维护科。</p>
+    <h4 id="method">网络故障报修方法</h4>
+    <p class="blue">1.关注下方我们的微信报修系统，点击我要报修，按照指示操作即可。</p>
+    <p class="blue">2、在宿舍楼下报修处填写纸质报修表。</p>
+    <p>每天的16：:30到18:30期间会有我们的工作人员上门处理您的问题，请保证寝室本人在，或舍友在时将电脑打开，留下您的电脑密码以及宽带账户密码，网络维护科将竭诚为您服务。</p>
+    <p>关注下方我们的“新浪微博”或者“微信公众号”了解学校最新网络动态，掌握更多客户端变动和上网资讯。</p>
+    <h4 id="join1">加入我们网络维护科</h4>
+    <p>有想要加入网维的大神或者感兴趣的小伙伴也请积极关注网维动态，这里有很多诱人的网络福利以及丰富的活动哟，欢迎各位报名加入网维，流程已经在下面偷偷告诉你啦，详情请致电报名咨询：18928187454，18928187455</p>
+    <img src="img/guide32.png">
+    <p>微博：@中山学院网络维护科&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp微信公众号：中山学院网维</p>
+    <p>官方网站：www.zsxyww.com&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp微信报修平台：中山学院网维报修系统</p>
+    <img src="img/guide33.png" style="display: inline-block;height: 300px;width: 257px">
+    <img src="img/guide34.png" style="display: inline-block;height: 300px;width: 400px">
+    <img src="img/guide35.png" style="display: inline-block;height: 300px;width: 257px">
+</div>
+<script src="js/vendor/jquery.js"></script>
+<!--<script src="js/scroll_stop_min.js"></script>-->
+<script>
+    (function(){var a=jQuery.event.special,c="D"+(+new Date()),b="D"+(+new Date()+1);a.scrollstart={setup:function(){var e,d=function(h){var f=this,g=arguments;if(e){clearTimeout(e)}else{h.type="scrollstart";jQuery.event.dispatch.apply(f,g)}e=setTimeout(function(){e=null},a.scrollstop.latency)};jQuery(this).bind("scroll",d).data(c,d)},teardown:function(){jQuery(this).unbind("scroll",jQuery(this).data(c))}};a.scrollstop={latency:300,setup:function(){var e,d=function(h){var f=this,g=arguments;if(e){clearTimeout(e)}e=setTimeout(function(){e=null;h.type="scrollstop";jQuery.event.dispatch.apply(f,g)},a.scrollstop.latency)};jQuery(this).bind("scroll",d).data(b,d)},teardown:function(){jQuery(this).unbind("scroll",jQuery(this).data(b))}}})();
+</script>
+<script>
+    var width, height,id;
+    function click_nav(event) {
+        var aim = $($(event.target).attr("href"))[0].offsetTop;
+        var current = $(document).scrollTop();
+        move(current,(current - aim) / 30);
+        event.preventDefault();
+    }
+    function change_size() {
+        width = $(window).width();
+        height = $(window).height();
+        $("#background_img").css("height", height).css("width", width);
+        $("#background_shadow").css("height", height).css("width", width);
+    }
+    function move(current,step) {
+        var t = 0;
+        clearInterval(id);
+        id = setInterval(function () {
+            window.scrollTo(0, current - step);
+            ++t;
+            current = current - step;
+            if (t >= 30) {
+                clearInterval(id);
+            }
+        }, 12.5);
+    }
+    function change_gt() {
+        var pos = $(document).scrollTop();
+        var gt = $("#go_top");
+        if (pos > height / 3) {
+            gt.fadeIn();
+        } else {
+            gt.fadeOut();
+        }
+        gt = null;
+    }
+    $(document).ready(function () {
+        change_size();
+        change_gt();
+        $(window).resize(change_size);
+        $("#go_top").click(function () {
+            var current = $(document).scrollTop();
+            move(current,current / 30);
+            event.preventDefault();
+        });
+        $("ul a").click(click_nav);
+        $(window).bind('scrollstop', function () {
+            change_gt();
+        });
+    });
+</script>
+</body>
+</html>
