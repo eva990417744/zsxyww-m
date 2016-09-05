@@ -263,7 +263,8 @@ p{
 
 /*  联系方式  */
 .contact{
-    padding: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     margin-top:70px;
     background: #000000 url("../img/black_paper.jpg") repeat;
     color: #ffffff;

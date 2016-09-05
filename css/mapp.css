@@ -1,0 +1,72 @@
+body{
+    color: #ffffff;
+}
+
+.container-fluid{
+    text-align: center;
+}
+
+/*  背景阴影  */
+.background_shadow{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background-shadow.png');
+    opacity: 0.35;
+    z-index: -1;
+}
+
+/*  背景图片   */
+#background_img{
+    position: fixed;
+    vertical-align: middle;
+    z-index: -2;
+}
+
+/*   导航栏    */
+nav{
+    text-align: center;
+}
+
+nav ul{
+    padding: 0;
+    margin:0;
+    background: rgba(0,0,0,0.29);
+}
+
+nav ul li{
+    padding:8px 0;
+    list-style-type:none;
+    background: rgba(0,0,0,0.29);
+}
+
+nav a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+
+nav a:hover,nav a:focus{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#nav-btn{
+    background-color: rgba(0,0,0,0.38);
+}
+
+#nav-btn span{
+    font-size: 24px;
+}
+
+#drop-nav{
+    display: none;
+}
+
+
+/*   about us栏     */
+#about{
+    display: none;
+}
+
