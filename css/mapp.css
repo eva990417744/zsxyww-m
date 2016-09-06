@@ -8,6 +8,15 @@ body{
 
 .container-fluid > .row{
     margin:40px 0;
+    padding: 20px 0;
+}
+
+.container-fluid > .row:first-child{
+    margin-top:0;
+}
+
+.container-fluid .modal-backdrop{
+    opacity: .9;
 }
 
 /*  背景阴影  */
@@ -25,6 +34,14 @@ body{
     position: fixed;
     vertical-align: middle;
     z-index: -2;
+}
+
+/*   返回顶部   */
+#go_top{
+    position: fixed;
+    display: none;
+    right: 2%;
+    bottom:2%;
 }
 
 /*   导航栏    */
@@ -74,15 +91,14 @@ nav a:hover,nav a:focus{
     display: none;
 }
 
-#about .modal-backdrop{
-    opacity: .9;
+/*   recruit栏    */
+#carousel-example-generic{
+    margin:40px 0;
 }
 
-/*   recruit栏    */
 #carousel-example-generic img{
     width: 100%;
 }
-
 
 /*   repair栏    */
 #repair a{

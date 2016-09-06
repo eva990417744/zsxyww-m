@@ -16,22 +16,23 @@
 <body>
 <div class="background_shadow"></div>
 <img id="background_img" src="img/bg4.jpg">
+<div id="go_top"><a href="javascript:void(0)"><img src="img/arrow-up.png"></a></div>
 <nav>
     <ul>
         <li><a href="#"><img src="img/logo.png" width="120"></a></li>
         <li id="nav-btn"><a href="javascript:void(0);"><span class="glyphicon glyphicon-th"></span></a></li>
     </ul>
     <ul id="drop-nav">
-        <li><a href="#">网维介绍</a></li>
-        <li><a href="#">网维招新</a></li>
-        <li><a href="#">报修导航</a></li>
-        <li><a href="#">便携下载</a></li>
-        <li><a href="#">值班表</a></li>
-        <li><a href="#">办公地址</a></li>
+        <li><a href="#introduction">网维介绍</a></li>
+        <li><a href="#carousel-example-generic">网维招新</a></li>
+        <li><a href="#repair">报修导航</a></li>
+        <li><a href="#convenient">便携下载</a></li>
+        <li><a href="#roster">值班表</a></li>
+        <li><a href="#address">办公地址</a></li>
     </ul>
 </nav>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" id="introduction">
         <div class="col-xs-12">
             <h1>Hello,welcome to our website</h1>
             <p>网络维护科是由学院信息中心直接领导的学生组织，主要职责包括保障校内师生的正常上网，处理和协助处理校园网出现的各类问题，以及协助处理校园网出现的各类问题，以及协助进行开户等其他相关的工作.</p>
@@ -140,7 +141,7 @@
                 <div role="tabpanel" class="tab-pane active" id="webchat">微信报修我们会优先处理<br>
                     1:关注微信报修公众号:zsxywwbx<br>
                     2:点击绑定微信，按照流程填写真实数据<br>
-                    3:点击报修<br>
+                    3:点击报修<br><br>
                     <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal1">
                         微信报修教程视频
                     </button>
@@ -165,7 +166,7 @@
                 </div>
                 <div role="tabpanel" class="tab-pane" id="paper">
                     各个宿管处都有我们的报修表和宿管说明你要网络报修
-                    <br>
+                    <br><br>
                     <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal2">
                         点击查看各个宿管报修处
                     </button>
@@ -188,7 +189,7 @@
                 </div>
                 <div role="tabpanel" class="tab-pane" id="phone">
                     请尽可能按照周内值班时间点负责人进行电话报修,如果联系不上,请联系周内其他负责人。
-                    <br>
+                    <br><br>
                     <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal3">
                         查看报修电话
                     </button>
@@ -259,7 +260,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="roster">
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#mon" role="tab" data-toggle="tab">周一</a></li>
             <li role="presentation"><a href="#tues" role="tab" data-toggle="tab">周二</a></li>
@@ -280,7 +281,7 @@
             <div role="tabpanel" class="tab-pane" id="sun">...</div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="address">
         <h2>办公地址</h2>
         <h3>信息中心：</h3>
         <p>电子科技大学中山学院<br>实验楼B幢207室</p>
@@ -294,6 +295,7 @@
         </p>
     </div>
 </div>
+<script src="js/scroll_stop_min.js"></script>
 <script src="js/mapp.js"></script>
 </body>
 </html>
