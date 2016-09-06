@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <script type="text/javascript">
-        //        try {
-        //            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        //            } else {
-        //                window.location.href = "index.html";
-        //            }
-        //        } catch (e) {
-        //        }
     </script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -42,7 +35,6 @@
         <div class="col-xs-12">
             <h1>Hello,welcome to our website</h1>
             <p>网络维护科是由学院信息中心直接领导的学生组织，主要职责包括保障校内师生的正常上网，处理和协助处理校园网出现的各类问题，以及协助处理校园网出现的各类问题，以及协助进行开户等其他相关的工作.</p>
-            <!--<p>一年一度的招新又开始了，欢迎各位大一新生来了解下我们这个团体，了解详情直接点击下面链接。</p>-->
             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about">点击了解更多</button>
             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
                  aria-hidden="true" id="about">
@@ -81,7 +73,6 @@
                             </div>
                             <p> 想更加的了解我们么,点击上面的图标进来看看吧,wiki百科里面还有各种常见或者不常见网络故障的解决方案呢。</p>
                         </div>
-
                     </div>
                     <div class="modal-header">
                         <h4 class="网维百科">招新</h4>
@@ -99,14 +90,12 @@
         </div>
     </div>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
 
-        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
 
             <div class="item active">
@@ -128,8 +117,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Controls -->
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
@@ -153,10 +140,80 @@
                 <div role="tabpanel" class="tab-pane active" id="webchat">微信报修我们会优先处理<br>
                     1:关注微信报修公众号:zsxywwbx<br>
                     2:点击绑定微信，按照流程填写真实数据<br>
-                    3:点击报修</div>
-                <div role="tabpanel" class="tab-pane" id="paper">各个宿管处都有我们的报修表和宿管说明你要网络报修</div>
-                <div role="tabpanel" class="tab-pane" id="phone">请尽可能按照周内值班时间点负责人进行电话报修,如果联系不上,请联系周内其他负责人。</div>
-                <div role="tabpanel" class="tab-pane" id="blog">关注我们的微博 私信给我们电话号码宿舍号等信息,也可报修。</div>
+                    3:点击报修<br>
+                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal1">
+                        微信报修教程视频
+                    </button>
+                    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span
+                                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="myModalLabel1">微信报修教程</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item" src=""></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="paper">
+                    各个宿管处都有我们的报修表和宿管说明你要网络报修
+                    <br>
+                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal2">
+                        点击查看各个宿管报修处
+                    </button>
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span
+                                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="myModalLabel2">微信报修教程</h4>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="phone">
+                    请尽可能按照周内值班时间点负责人进行电话报修,如果联系不上,请联系周内其他负责人。
+                    <br>
+                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal3">
+                        查看报修电话
+                    </button>
+                    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span
+                                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="myModalLabel3">一周报修电话</h4>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="blog">
+                    关注我们的微博 私信给我们电话号码宿舍号等信息,也可报修。
+                    <br>
+                    <a href="..."><img src="..."></a>
+                </div>
             </div>
         </div>
     </div>
@@ -169,12 +226,10 @@
                 </a>
                 <div class="media-body">
                     <h4 class="media-heading">天翼校园客户端<span><sup>Hot:80°</sup><sub>2/4M</sub></span></h4>
-                    <!--<ul class="disc">-->
-                        <li>帐号无需添加后缀@zsdzkd</li>
-                        <li>请不要安装任何WIFI共享类软件</li>
-                        <li>提示无法获取IP等状况请插拔网线</li>
-                        <li>如还有问题请报修</li>
-                    <!--</ul>-->
+                    <li>帐号无需添加后缀@zsdzkd</li>
+                    <li>请不要安装任何WIFI共享类软件</li>
+                    <li>提示无法获取IP等状况请插拔网线</li>
+                    <li>如还有问题请报修</li>
                 </div>
             </div>
             <div class="media">
@@ -183,12 +238,10 @@
                 </a>
                 <div class="media-body">
                     <h4 class="media-heading">天翼校园客户端<span><sup>Hot:80°</sup><sub>2/4M</sub></span></h4>
-                    <!--<ul class="disc">-->
-                        <li>注意账号需要添加后缀</li>
-                        <li>密码注意不要泄露</li>
-                        <li>如有问题请报修</li>
-                        <li>*推荐微信报修</li>
-                    <!--</ul>-->
+                    <li>注意账号需要添加后缀</li>
+                    <li>密码注意不要泄露</li>
+                    <li>如有问题请报修</li>
+                    <li>*推荐微信报修</li>
                 </div>
             </div>
             <div class="media">
