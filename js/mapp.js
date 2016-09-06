@@ -33,7 +33,7 @@
             nav.css("display","block");
             timer=setInterval(function () {
                 if (temp>150){
-                    nav.css("height",212);
+                    nav.css("height",215);
                     clearInterval(timer);
                     return;
                 }

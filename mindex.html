@@ -2,8 +2,8 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <script type="text/javascript">
         //        try {
@@ -139,64 +139,70 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="row">
-        <h1>报修导航</h1>
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#webchat" role="tab" data-toggle="tab">微信</a></li>
-            <li role="presentation"><a href="#paper" role="tab" data-toggle="tab">纸质</a></li>
-            <li role="presentation"><a href="#phone" role="tab" data-toggle="tab">电话</a></li>
-            <li role="presentation"><a href="#blog" role="tab" data-toggle="tab">微博</a></li>
-        </ul>
+    <div class="row" id="repair">
+        <div class="col-xs-10 col-xs-offset-1">
+            <h1>报修导航</h1>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#webchat" role="tab" data-toggle="tab">微信</a></li>
+                <li role="presentation"><a href="#paper" role="tab" data-toggle="tab">纸质</a></li>
+                <li role="presentation"><a href="#phone" role="tab" data-toggle="tab">电话</a></li>
+                <li role="presentation"><a href="#blog" role="tab" data-toggle="tab">微博</a></li>
+            </ul>
 
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="webchat">...</div>
-            <div role="tabpanel" class="tab-pane" id="paper">...</div>
-            <div role="tabpanel" class="tab-pane" id="phone">...</div>
-            <div role="tabpanel" class="tab-pane" id="blog">...</div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="webchat">微信报修我们会优先处理<br>
+                    1:关注微信报修公众号:zsxywwbx<br>
+                    2:点击绑定微信，按照流程填写真实数据<br>
+                    3:点击报修</div>
+                <div role="tabpanel" class="tab-pane" id="paper">各个宿管处都有我们的报修表和宿管说明你要网络报修</div>
+                <div role="tabpanel" class="tab-pane" id="phone">请尽可能按照周内值班时间点负责人进行电话报修,如果联系不上,请联系周内其他负责人。</div>
+                <div role="tabpanel" class="tab-pane" id="blog">关注我们的微博 私信给我们电话号码宿舍号等信息,也可报修。</div>
+            </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="convenient">
         <h2>便携下载</h2>
-
-        <div class="media">
-            <a class="media-left" href="#">
-                <img src="img/empty.gif" alt="...">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">天翼校园客户端<span><sup>Hot:80°</sup><sub>2/4M</sub></span></h4>
-                <ul class="disc">
-                    <li>帐号无需添加后缀@zsdzkd</li>
-                    <li>请不要安装任何WIFI共享类软件</li>
-                    <li>提示无法获取IP等状况请插拔网线</li>
-                    <li>如还有问题请报修</li>
-                </ul>
+        <div class="col-xs-11">
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img src="img/empty.gif" alt="...">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">天翼校园客户端<span><sup>Hot:80°</sup><sub>2/4M</sub></span></h4>
+                    <!--<ul class="disc">-->
+                        <li>帐号无需添加后缀@zsdzkd</li>
+                        <li>请不要安装任何WIFI共享类软件</li>
+                        <li>提示无法获取IP等状况请插拔网线</li>
+                        <li>如还有问题请报修</li>
+                    <!--</ul>-->
+                </div>
             </div>
-        </div>
-        <div class="media">
-            <a class="media-left" href="#">
-                <img src="img/empty.gif" alt="...">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">天翼校园客户端<span><sup>Hot:80°</sup><sub>2/4M</sub></span></h4>
-                <ul class="disc">
-                    <li>注意账号需要添加后缀</li>
-                    <li>密码注意不要泄露</li>
-                    <li>如有问题请报修</li>
-                    <li>*推荐微信报修</li>
-                </ul>
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img src="img/empty.gif" alt="...">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">天翼校园客户端<span><sup>Hot:80°</sup><sub>2/4M</sub></span></h4>
+                    <!--<ul class="disc">-->
+                        <li>注意账号需要添加后缀</li>
+                        <li>密码注意不要泄露</li>
+                        <li>如有问题请报修</li>
+                        <li>*推荐微信报修</li>
+                    <!--</ul>-->
+                </div>
             </div>
-        </div>
-        <div class="media">
-            <a class="media-left" href="#">
-                <img src="img/empty.gif" alt="...">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">链接导航<span><sup>Hot:80°</sup><sub></sub></span></h4>
-                <li><a href="http://util.sola.love/yue.html">电信余额查询</a></li>
-                <li><a href="http://gd.189.cn/webpay/chongzhi/czindex.jsp">宽带充值</a></li>
-                <li><a href="http://www2.zsc.edu.cn/xxzx">信息中心官方网址</a></li>
-                <li><a href="http://jwgl.zsc.edu.cn:90/">学院教务管理</a></li>
-                <li><a href="http://util.sola.love/cet">英语四，六级成绩查询</a></li>
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img src="img/empty.gif" alt="...">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">链接导航<span><sup>Hot:80°</sup><sub></sub></span></h4>
+                    <li><a href="http://util.sola.love/yue.html">电信余额查询</a></li>
+                    <li><a href="http://gd.189.cn/webpay/chongzhi/czindex.jsp">宽带充值</a></li>
+                    <li><a href="http://www2.zsc.edu.cn/xxzx">信息中心官方网址</a></li>
+                    <li><a href="http://jwgl.zsc.edu.cn:90/">学院教务管理</a></li>
+                    <li><a href="http://util.sola.love/cet">英语四，六级成绩查询</a></li>
+                </div>
             </div>
         </div>
     </div>
@@ -227,7 +233,7 @@
         <p>电子科技大学中山学院<br>实验楼B幢207室</p>
         <p>Tel:(+86) 0760-88332760</p>
         <a href="#">admin@zsxyww.com</a>
-        <p>
+        <p><br>
             <a target="_blank"
                href="https://maps.google.com/maps?f=d&source=s_d&saddr=22.524386,113.389535&daddr=&hl=zh-cn&geocode=&sll=22.524638,113.389949&sspn=0.002165,0.004128&vpsrc=0&mra=mift&mrsp=0&sz=19&ie=UTF8&t=m&z=19&iwloc=ddw0">
                 <img src="img/location.jpg">

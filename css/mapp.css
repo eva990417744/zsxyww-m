@@ -6,6 +6,10 @@ body{
     text-align: center;
 }
 
+.container-fluid > .row{
+    margin:40px 0;
+}
+
 /*  背景阴影  */
 .background_shadow{
     position: fixed;
@@ -69,4 +73,55 @@ nav a:hover,nav a:focus{
 #about{
     display: none;
 }
+
+#about .modal-backdrop{
+    opacity: .9;
+}
+
+/*   recruit栏    */
+#carousel-example-generic img{
+    width: 100%;
+}
+
+
+/*   repair栏    */
+#repair a{
+    color: #ffffff;
+}
+
+#repair li{
+    width: 25%;
+}
+
+#repair ul .active a{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: solid #ffffff 2px;
+}
+
+#repair .tab-content{
+    margin-top:10px;
+}
+
+/*  convenient栏   */
+#convenient img{
+    width: 52px;
+    background: url("../img/combined.png") no-repeat top left;
+    background-position: 0 -188px;
+}
+
+#convenient .col-xs-11{
+    margin:0 auto;
+}
+
+#convenient .col-xs-11{
+    text-align: left;
+}
+
+#convenient a{
+    color: aquamarine;
+    text-decoration: underline;
+}
+
 
