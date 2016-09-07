@@ -104,7 +104,7 @@ nav a:hover, nav a:focus {
     color: #ffffff;
 }
 
-#repair li {
+#repair .nav li {
     width: 25%;
 }
 
