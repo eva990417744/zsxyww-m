@@ -32,7 +32,7 @@
         <li><a href="#address">办公地址</a></li>
     </ul>
 </nav>
-<div class="container-fluid">
+<div class="container-fluid" id="swipe">
     <div class="row" id="introduction">
         <div class="col-xs-12">
             <h1>Hello,welcome to our website</h1>
@@ -104,23 +104,23 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
-    <P>一年一度的招新又开始了，欢迎各位大一新生来了解下我们这个团体，了解详情直接点击下面链接。</P>
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#baoming">坐飞机去报名</button>
-    <div class="modal fade" id="baoming" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <P>一年一度的招新又开始了，欢迎各位大一新生来了解下我们这个团体，了解详情直接点击下面链接。</P>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#baoming">坐飞机去报名</button>
+        <div class="modal fade" id="baoming" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
 
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span
-                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
@@ -1005,6 +1005,7 @@
         </p>
     </div>
 </div>
+<script src="js/hammer.min.js"></script>
 <script src="js/scroll_stop_min.js"></script>
 <script src="js/mapp.js"></script>
 </body>

@@ -20,14 +20,14 @@
         calculate(6);
     }
 
-//  计算各个块的位置
+    //  计算各个块的位置
     function calculate(num) {
         var temph;  // 块的高度
         var tempt;  // 块的offsetTop
         for (var i = 0; i < num; i++) {
             temph = (height - block[i].clientHeight) / 2;
             tempt = block[i].offsetTop;
-            position[i] = tempt - 40;
+            position[i] = tempt;
             if (temph < 0) {
                 scroll_pos[i] = tempt;
             } else {
@@ -115,14 +115,13 @@
 
     //手势上滑事件
     function swipeTop() {
-        console.log("swipeTop");
         var endCurrent = $(document).scrollTop();  //  滑动停止时的位置
         var temp, step;  //  temp为目标位置，step为每一次移动的距离
 
-        if (index == 5) {
+        if (index >= 5) {
             move(endCurrent, (endCurrent - scroll_pos[0]) / 30);
         } else {
-            temp = scroll_pos[index+1];
+            temp = scroll_pos[index + 1];
             step = (endCurrent - temp) / 30;
             move(endCurrent, step);
         }
@@ -130,7 +129,6 @@
 
     //  手势下滑事件
     function swipeDown() {
-        console.log("swipeDown");
         var endCurrent = $(document).scrollTop();  //  滑动停止时的位置
         var temp, step;  //  temp为目标位置，step为每一次移动的距离
 
@@ -148,23 +146,21 @@
 
     $(document).ready(function () {
         block = $(".container-fluid").children();
-        console.log("compare");
         hammertime = new Hammer(document.getElementById("swipe"), {
             recognizers: [
                 [Hammer.Swipe]
             ]
         });
-        console.log("init");
         index = get_position(6);
 
         change_size();
         change_gt();
 
         //  手势下滑事件
-        hammertime.on("swipedown",swipeDown);
+        hammertime.on("swipedown", swipeDown);
 
         //  手势上滑事件
-        hammertime.on("swipeup",swipeTop);
+        hammertime.on("swipeup", swipeTop);
 
         //  改变窗口大小事件
         $(window).resize(change_size);
