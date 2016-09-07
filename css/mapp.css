@@ -1,26 +1,26 @@
-body{
+body {
     color: #ffffff;
 }
 
-.container-fluid{
+.container-fluid {
     text-align: center;
 }
 
-.container-fluid > .row{
-    margin:40px 0;
+.container-fluid > .row {
+    margin: 40px 0;
     padding: 20px 0;
 }
 
-.container-fluid > .row:first-child{
-    margin-top:0;
+.container-fluid > .row:first-child {
+    margin-top: 0;
 }
 
-.container-fluid .modal-backdrop{
+.container-fluid .modal-backdrop {
     opacity: .9;
 }
 
 /*  背景阴影  */
-.background_shadow{
+.background_shadow {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -30,114 +30,121 @@ body{
 }
 
 /*  背景图片   */
-#background_img{
+#background_img {
     position: fixed;
     vertical-align: middle;
     z-index: -2;
 }
 
 /*   返回顶部   */
-#go_top{
+#go_top {
     position: fixed;
     display: none;
     right: 2%;
-    bottom:2%;
+    bottom: 2%;
 }
 
 /*   导航栏    */
-nav{
+nav {
     text-align: center;
 }
 
-nav ul{
+nav ul {
     padding: 0;
-    margin:0;
-    background: rgba(0,0,0,0.29);
+    margin: 0;
+    background: rgba(0, 0, 0, 0.29);
 }
 
-nav ul li{
-    padding:8px 0;
-    list-style-type:none;
-    background: rgba(0,0,0,0.29);
+nav ul li {
+    padding: 8px 0;
+    list-style-type: none;
+    background: rgba(0, 0, 0, 0.29);
 }
 
-nav a{
+nav a {
     display: block;
     width: 100%;
     height: 100%;
     color: #ffffff;
 }
 
-nav a:hover,nav a:focus{
+nav a:hover, nav a:focus {
     color: #ffffff;
     text-decoration: none;
 }
 
-#nav-btn{
-    background-color: rgba(0,0,0,0.38);
+#nav-btn {
+    background-color: rgba(0, 0, 0, 0.38);
 }
 
-#nav-btn span{
+#nav-btn span {
     font-size: 24px;
 }
 
-#drop-nav{
+#drop-nav {
     display: none;
 }
 
-
 /*   about us栏     */
-#about{
+#about {
     display: none;
 }
 
 /*   recruit栏    */
-#carousel-example-generic{
-    margin:40px 0;
+#carousel-example-generic {
+    margin: 40px 0;
 }
 
-#carousel-example-generic img{
+#carousel-example-generic img {
     width: 100%;
 }
 
 /*   repair栏    */
-#repair a{
+#repair a {
     color: #ffffff;
 }
 
-#repair li{
+#repair li {
     width: 25%;
 }
 
-#repair ul .active a{
+#repair ul .active a {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     border-bottom: solid #ffffff 2px;
 }
 
-#repair .tab-content{
-    margin-top:10px;
+#repair .tab-content {
+    margin-top: 10px;
 }
 
 /*  convenient栏   */
-#convenient img{
+#convenient img {
     width: 52px;
     background: url("../img/combined.png") no-repeat top left;
     background-position: 0 -188px;
 }
 
-#convenient .col-xs-11{
-    margin:0 auto;
+#convenient .col-xs-11 {
+    margin: 0 auto;
 }
 
-#convenient .col-xs-11{
+#convenient .col-xs-11 {
     text-align: left;
 }
 
-#convenient a{
+#convenient a {
     color: aquamarine;
     text-decoration: underline;
 }
 
+/*  list-group-iteml 栏  */
+.list-group-item {
+    text-align: left;
+    color: #ffffff;
+}
 
+.list-group {
+    opacity: 0.4;
+}

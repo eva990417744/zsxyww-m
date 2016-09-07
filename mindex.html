@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/mapp.css">
     <script src="js/vendor/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scroll_stop_min.js"></script>
 </head>
 <body>
 <div class="background_shadow"></div>
@@ -36,58 +37,35 @@
         <div class="col-xs-12">
             <h1>Hello,welcome to our website</h1>
             <p>网络维护科是由学院信息中心直接领导的学生组织，主要职责包括保障校内师生的正常上网，处理和协助处理校园网出现的各类问题，以及协助处理校园网出现的各类问题，以及协助进行开户等其他相关的工作.</p>
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about">点击了解更多</button>
-            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-                 aria-hidden="true" id="about">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
-                                class="sr-only">Close</span></button>
-                        <h4 class="网维百科" id="myModalLabel">网维百科</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
-                                <h4>搜狗百科</h4>
-                                <p>
-                                    <a href="http://baike.sogou.com/v63143404.htm?fromTitle=%E7%94%B5%E5%AD%90%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E4%B8%AD%E5%B1%B1%E5%AD%A6%E9%99%A2%E7%BD%91%E7%BB%9C%E7%BB%B4%E6%8A%A4%E7%A7%91"
-                                       target="_blank">
-                                        <img src="img/shougou.png" width="100" height="100">
-                                    </a>
-                                </p>
-                            </div>
-                            <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
-                                <h4>网维wiki</h4>
-                                <p>
-                                    <a href="http://wiki.sola.love" target="_blank">
-                                        <img src="img/wikipedialogo.png" width="100" height="100">
-                                    </a>
-                                </p>
-                            </div>
-                            <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
-                                <h4>百度百科</h4>
-                                <p>
-                                    <a href="http://baike.baidu.com/view/6287923.htm" target="_blank">
-                                        <img src="img/baidu.png" width="100" height="100">
-                                    </a>
-                                </p>
-                            </div>
-                            <p> 想更加的了解我们么,点击上面的图标进来看看吧,wiki百科里面还有各种常见或者不常见网络故障的解决方案呢。</p>
-                        </div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="网维百科">招新</h4>
-                    </div>
-                    <div class="modal-body">
-                        <P>一年一度的招新又开始了，欢迎各位大一新生来了解下我们这个团体，了解详情直接点击下面链接。</P>
-                        <button type="button" class="btn btn-default">坐飞机去报名</button>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+            <div class="row">
+                <h2>网维百科</h2>
+                <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                    <h4>搜狗百科</h4>
+                    <p>
+                        <a href="http://baike.sogou.com/v63143404.htm?fromTitle=%E7%94%B5%E5%AD%90%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E4%B8%AD%E5%B1%B1%E5%AD%A6%E9%99%A2%E7%BD%91%E7%BB%9C%E7%BB%B4%E6%8A%A4%E7%A7%91"
+                           target="_blank">
+                            <img src="img/shougou.png" width="100" height="100">
+                        </a>
+                    </p>
                 </div>
+                <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                    <h4>网维wiki</h4>
+                    <p>
+                        <a href="http://wiki.sola.love" target="_blank">
+                            <img src="img/wikipedialogo.png" width="100" height="100">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                    <h4>百度百科</h4>
+                    <p>
+                        <a href="http://baike.baidu.com/view/6287923.htm" target="_blank">
+                            <img src="img/baidu.png" width="100" height="100">
+                        </a>
+                    </p>
+                </div>
+                <p> 想更加的了解我们么,点击上面的图标进来看看吧,wiki百科里面还有各种常见或者不常见网络故障的解决方案呢。</p>
             </div>
-
         </div>
     </div>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -127,6 +105,26 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <P>一年一度的招新又开始了，欢迎各位大一新生来了解下我们这个团体，了解详情直接点击下面链接。</P>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#baoming">坐飞机去报名</button>
+    <div class="modal fade" id="baoming" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+
+        </div>
+    </div>
     <div class="row" id="repair">
         <div class="col-xs-10 col-xs-offset-1">
             <h1>报修导航</h1>
@@ -141,79 +139,35 @@
                 <div role="tabpanel" class="tab-pane active" id="webchat">微信报修我们会优先处理<br>
                     1:关注微信报修公众号:zsxywwbx<br>
                     2:点击绑定微信，按照流程填写真实数据<br>
-                    3:点击报修<br><br>
-                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal1">
-                        微信报修教程视频
-                    </button>
-                    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span
-                                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="myModalLabel1">微信报修教程</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe class="embed-responsive-item" src=""></iframe>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
+                    3:点击报修<br>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src=""></iframe>
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="paper">
-                    各个宿管处都有我们的报修表和宿管说明你要网络报修
-                    <br><br>
-                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal2">
-                        点击查看各个宿管报修处
-                    </button>
-                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span
-                                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="myModalLabel2">微信报修教程</h4>
-                            </div>
-                            <div class="modal-body">
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
+                    各个宿管处都有我们的报修表和宿管说明你要网络报修<br>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+                        <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+                        <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+                        <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+                    </ul>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="phone">
-                    请尽可能按照周内值班时间点负责人进行电话报修,如果联系不上,请联系周内其他负责人。
-                    <br><br>
-                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#myModal3">
-                        查看报修电话
-                    </button>
-                    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span
-                                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="myModalLabel3">一周报修电话</h4>
-                            </div>
-                            <div class="modal-body">
+                    <h4>请尽可能按照周内值班时间点负责人进行电话报修,如果联系不上,请联系周内其他负责人。</h4>
 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+                        <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+                        <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+                        <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+                    </ul>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="blog">
-                    关注我们的微博 私信给我们电话号码宿舍号等信息,也可报修。
-                    <br>
-                    <a href="..."><img src="..."></a>
+                    <h4>关注我们的微博 私信给我们电话号码宿舍号等信息,也可报修。</h4>
+                    <a href="http://weibo.com/zsxyww?topnav=1&wvr=6&topsug=1&is_all=1"><img src="img/wb.png"
+                                                                                            width="100%"
+                                                                                            height="100%"></a>
                 </div>
             </div>
         </div>
@@ -272,7 +226,18 @@
         </ul>
 
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="mon">...</div>
+            <div role="tabpanel" class="tab-pane active" id="mon">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">1111</li>
+                    <li class="list-group-item list-group-item-success"></li>
+                    <li class="list-group-item list-group-item-success"></li>
+                    <li class="list-group-item list-group-item-success"></li>
+                    <li class="list-group-item list-group-item-success"></li>
+                    <li class="list-group-item list-group-item-success"></li>
+                    <li class="list-group-item list-group-item-success"></li>
+                    <li class="list-group-item list-group-item-success"></li>
+                </ul>
+            </div>
             <div role="tabpanel" class="tab-pane" id="tues">...</div>
             <div role="tabpanel" class="tab-pane" id="wed">...</div>
             <div role="tabpanel" class="tab-pane" id="thur">...</div>
