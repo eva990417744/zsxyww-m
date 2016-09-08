@@ -49,7 +49,36 @@
         <h4>&nbsp;&nbsp;&nbsp;&nbsp;
             网络维护科是由学院信息中心直接领导的学生组织，主要职责包括保障校内师生的正常上网，处理和协助处理校园网出现的各类问题，以及协助处理校园网出现的各类问题，以及协助进行开户等其他相关的工作.</h4>
         <h4 class="hide-for-mobile">&nbsp;&nbsp;&nbsp;&nbsp;一年一度的招新又开始了，欢迎各位大一新生来了解下我们这个团体，了解详情直接点击下面链接。</h4>
-        <div align="center"><a class="secondary button" href="#">坐飞机去报名</a></div>
+        <div align="center">
+            <a class="secondary button" data-open="baoming1">坐飞机去报名</a>
+            <div class="reveal" id="baoming1" data-reveal>
+                <form data-abide action="#">
+                <div data-abide-error class="alert callout" style="display: none;">
+                    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                </div>
+                <label>
+                    <p>姓名</p>
+                    <input type="text" required placeholder="请填写真实姓名">
+                    <span class="form-error">你没有填写昵称</span>
+                </label>
+                <label>
+                    <p>联系电话</p>
+                    <input type="number" required placeholder="常用联系电话">
+                    <span class="form-error">输入正确的电话号码</span>
+                </label>
+                <label>
+                    <p>备注</p>
+                    <textarea type="text" cols="500" style="height: 100px;" required
+                              placeholder="可以写写自己的特长什么的"></textarea>
+                    <span class="form-error">出错了</span>
+                </label>
+                <button class="button" type="submit" value="Submit">提交</button>
+            </form>
+                <button class="close-button" data-close aria-label="Close reveal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
     </div>
     <div class="medium-6 large-6 columns" id="ad">
         <div class="row ad">
