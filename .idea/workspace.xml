@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6863a8bc-c8b8-4c02-9a64-30d92be94de1" name="Default" comment="增加nav点击事件、返回顶部。优化部分效果">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bg3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bg5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bg6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mapp.css" afterPath="$PROJECT_DIR$/css/mapp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mapp.js" afterPath="$PROJECT_DIR$/js/mapp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mindex.html" afterPath="$PROJECT_DIR$/mindex.html" />
-    </list>
+    <list default="true" id="6863a8bc-c8b8-4c02-9a64-30d92be94de1" name="Default" comment="增加nav点击事件、返回顶部。优化部分效果" />
     <ignored path="zsxyww-m.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -35,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mindex.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mindex.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mindex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9065">
-              <caret line="989" column="10" selection-start-line="989" selection-start-column="10" selection-end-line="989" selection-end-column="10" />
+            <state relative-caret-position="287">
+              <caret line="527" column="43" selection-start-line="527" selection-start-column="43" selection-end-line="527" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -65,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapp.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mapp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/mapp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+            <state relative-caret-position="-1172">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,9 +84,9 @@
         <option value="$PROJECT_DIR$/js/vendor/mapp.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/mindex.html" />
         <option value="$PROJECT_DIR$/css/mapp.css" />
         <option value="$PROJECT_DIR$/js/mapp.js" />
+        <option value="$PROJECT_DIR$/mindex.html" />
       </list>
     </option>
   </component>
@@ -205,7 +194,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ZSCNSD-Index" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -275,12 +264,12 @@
       <workItem from="1473055926947" duration="21772000" />
       <workItem from="1473120578310" duration="9847000" />
       <workItem from="1473170153760" duration="3876000" />
-      <workItem from="1473360445281" duration="1030000" />
+      <workItem from="1473360445281" duration="1355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36525000" />
+    <option name="totallyTimeSpent" value="36850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -607,18 +596,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/mapp.js">
+    <entry file="file://$PROJECT_DIR$/mindex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="287">
+          <caret line="527" column="43" selection-start-line="527" selection-start-column="43" selection-end-line="527" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindex.html">
+    <entry file="file://$PROJECT_DIR$/js/mapp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9065">
-          <caret line="989" column="10" selection-start-line="989" selection-start-column="10" selection-end-line="989" selection-end-column="10" />
+        <state relative-caret-position="-1172">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
