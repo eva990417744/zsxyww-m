@@ -19,6 +19,10 @@ body {
     opacity: .9;
 }
 
+#page2,#page3,#page4,#page5,#page6{
+    display: none;
+}
+
 /*  背景阴影  */
 .background_shadow {
     position: fixed;
