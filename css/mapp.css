@@ -6,15 +6,6 @@ body {
     text-align: center;
 }
 
-.container-fluid > .row {
-    margin: 40px 0;
-    padding: 20px 0;
-}
-
-.container-fluid > .row:first-child {
-    margin-top: 0;
-}
-
 .container-fluid .modal-backdrop {
     opacity: .9;
 }
