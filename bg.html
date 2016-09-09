@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>招新系统后台界面</title>
+</head>
+<body>
+    <p>用户名:</p>
+    <input type="text" id="account">
+    <p>密码:</p>
+    <input type="text" id="password">
+    <button id="login">Login</button>
+    <hr>
+    <p id="message"></p>
+
+</body>
+<script src="js/vendor/jquery.js"></script>
+
+<script>
+    var key;
+    $("#login").click(function () {
+        var postData = "username=" + $("#account").val() + "&password=" + $("#password").val();
+        $.post("http://localhost:8888/api/", postData, function (data) {
+            if (data.key) {
+                key = data.key;
+                showTheFreshList();
+            } else {
+                $("#message").text(data.error);
+            }
+        })
+    });
+    function showTheFreshList() {
+        var list = "";
+        $.get("http://localhost:8888/api/list?k=" + key, {}, function (data) {
+            if(data.error) {
+                $("#message").text(data.error);
+            }else {
+                $.each(data,function (n,item) {
+                    list +="<p>Num:"+n+"　Name:"+item.name+"　Tel:"+item.tel+"</p>";
+                    list += "<p>Remark:" + item.remark + "</p><hr>";
+                });
+                $("#message").html(list);
+            }
+        });
+    }
+
+
+
+
+
+
+</script>
+</html>

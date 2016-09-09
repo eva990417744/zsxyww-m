@@ -25,6 +25,25 @@ h3 {
 p {
     color: #DBDBDB;
 }
+/*Lunzi Add something, don't edit it*/
+#bgLogin {
+    margin:15px;
+    color: grey;
+    float: right;
+}
+
+#showMessage {
+    display: none;
+    background: #5e5e5e;
+    margin: 20px 0;
+    padding: 10px 0 5px 0;
+    color: lightgreen;
+    font-weight: 900;
+    border-radius: 5px;
+    border: solid 1px #cacaca;
+    text-align: center;
+}
+/***********************************/
 
 .shadow {
     position: fixed;

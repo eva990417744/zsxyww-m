@@ -5,12 +5,19 @@
 
 ajax = new Ajax();
 ajax.getKey();
-var btn=$("#baoming1");
+
 function Ajax() {
     var QuQ = this;
     var key;
     var loginkey;
     var freshMenList;
+    var studentInfo;
+
+    this.getStudentInfo = function () {
+        studentInfo = $("#baoming1 form").serialize();
+        return studentInfo;
+    };
+
     this.getKey = function () {
         $.get("http://localhost:8888/api/", {}, function (data) {
             QuQ.key = data.key;
@@ -18,19 +25,19 @@ function Ajax() {
     };
 
     this.submitInfo = function(){
-        btn.unbind('click');
-        var studentInfo = $("#baoming1 form").serialize();
-        $.post("http://localhost:8888/api/apply?k=" + QuQ.key, studentInfo, function (data) {
-            if(data.success) {
-                //提交成功
-                console.log("success");
-                alert('提交成功')
-            }else {
-                //提交失败，显示错误信息
-                console.log(data.error);
-                alert('提交失败')
-            }
-        }, "json");
+        if(QuQ.getStudentInfo())
+            $.post("http://localhost:8888/api/apply?k=" + QuQ.key, studentInfo, function (data) {
+                if(data.success) {
+                    //提交成功
+                    QuQ.showMessageOnPage("报名成功，敬请期待w", "lightgreen");
+                }else {
+                    //提交失败，显示错误信息
+                    QuQ.showMessageOnPage("报名失败：" + data.error,"red");
+                }
+            }, "json");
+        else
+            QuQ.showMessageOnPage("输入信息异常，检查后重新输入","red");
+
         return false;
     };
 
@@ -52,4 +59,17 @@ function Ajax() {
 
     var sumbitForm = $("#baoming1");
     sumbitForm.submit(QuQ.submitInfo);
+
+    this.showMessageOnPage = function (text,color) {
+        var MessageBox = $("#showMessage");
+        MessageBox.text(text);
+        MessageBox.css("display","block");
+        MessageBox.css("color", color);
+    };
+
+    //跳转后台------------------
+    $("#bgLogin").click(function () {
+       window.open("bg.html")
+    });
+
 }
