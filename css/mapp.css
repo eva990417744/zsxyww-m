@@ -6,12 +6,17 @@ body {
     text-align: center;
 }
 
-.container-fluid .modal-backdrop {
-    opacity: .9;
+.container-fluid > .row {
+    margin: 40px 0;
+    padding: 20px 0;
 }
 
-#page2,#page3,#page4,#page5,#page6{
-    display: none;
+.container-fluid > .row:first-child {
+    margin-top: 0;
+}
+
+.container-fluid .modal-backdrop {
+    opacity: .9;
 }
 
 /*  背景阴影  */
