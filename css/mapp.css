@@ -150,3 +150,27 @@ nav a:hover, nav a:focus {
     border: none;
     background-color: rgba(255,255,255,.3);
 }
+
+.input-group input{
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
+
+#roster a {
+    color: #ffffff;
+}
+
+#roster .nav li {
+    width: 25%;
+}
+
+#roster ul .active a {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: solid #ffffff 2px;
+}
+
+#roster .tab-content {
+    margin-top: 10px;
+}

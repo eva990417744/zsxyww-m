@@ -5,7 +5,7 @@
 
 ajax = new Ajax();
 ajax.getKey();
-
+var btn=$("#baoming1");
 function Ajax() {
     var QuQ = this;
     var key;
@@ -18,14 +18,17 @@ function Ajax() {
     };
 
     this.submitInfo = function(){
+        btn.unbind('click');
         var studentInfo = $("#baoming1 form").serialize();
         $.post("http://localhost:8888/api/apply?k=" + QuQ.key, studentInfo, function (data) {
             if(data.success) {
                 //提交成功
                 console.log("success");
+                alert('提交成功')
             }else {
                 //提交失败，显示错误信息
                 console.log(data.error);
+                alert('提交失败')
             }
         }, "json");
         return false;

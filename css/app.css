@@ -1,34 +1,34 @@
 
-body{
+body {
     background-color: #E7E7E7;
     color: #4c4c4c;
     font-family: "Trebuchet MS", 微软雅黑, "Microsoft Yahei", Tahoma, Helvetica, Arial, SimSun, sans-serif;;
 }
 
-.row{
+.row {
     max-width: 79rem;
     /*margin-bottom: 32px;*/
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-h1{
+h1 {
     font-size: 230%;
 }
 
-h3{
+h3 {
     font-size: 200%;
 }
 
-p{
+p {
     color: #DBDBDB;
 }
 
-.shadow{
+.shadow {
     position: fixed;
-    top:99px;
+    top: 99px;
     width: 100%;
     height: 0;
     clear: both;
@@ -38,13 +38,13 @@ p{
     z-index: 10;
 }
 
-.calendar .shadow{
+.calendar .shadow {
     position: static;
     margin-bottom: 20px;
 }
 
 /*  导航栏  */
-.top-bar{
+.top-bar {
     position: fixed;
     z-index: 100;
     top: 0;
@@ -58,80 +58,79 @@ p{
     /*border-bottom: solid #ffffff 1px;*/
 }
 
-.logo{
+.logo {
     display: inline-block;
 }
 
-.dropdown{
+.dropdown {
     display: inline-block;
 }
 
-.top-bar ul{
+.top-bar ul {
     border: none;
     background-color: #DBDBDB;
 }
 
-.dropdown > li{
+.dropdown > li {
     display: inline-block;
     margin-left: 50px;
     font-size: 140%;
     background-color: #DBDBDB;
 }
 
-.dropdown > li:not(.menu-text):hover{
+.dropdown > li:not(.menu-text):hover {
     background-color: #B0B0B9;
 }
 
-.dropdown > li > a{
+.dropdown > li > a {
     font-size: 130%;
 }
 
-.submenu{
+.submenu {
     width: 170px;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
-.is-dropdown-submenu{
+.is-dropdown-submenu {
     min-width: unset;
 }
 
-.submenu li{
+.submenu li {
     text-align: center;
     /*background-color: #a68a9b;*/
     border-bottom: solid #ffffff 1px;
 }
 
-.submenu li:last-child{
+.submenu li:last-child {
     border: none;
 }
 
-.submenu li:hover{
+.submenu li:hover {
     background-color: #B0B0B9;
 }
 
-.top-bar a{
+.top-bar a {
     /*color: #ffffff;*/
 }
 
-
 /*  广告区域  */
 /*.ad{*/
-    /*max-width: none;*/
-    /*!* 临时  *!*/
-    /*height: 300px;*/
-    /*background-color: #949494;*/
+/*max-width: none;*/
+/*!* 临时  *!*/
+/*height: 300px;*/
+/*background-color: #949494;*/
 /*}*/
 
 /*   招新  */
-.recruit{
-    margin-top:120px;
+.recruit {
+    margin-top: 120px;
     background: #000000 url("../img/black_paper.jpg") repeat;
     color: #ffffff;
     padding: 10px;
     border-radius: 10px;
 }
 
-.button.secondary{
+.button.secondary {
     width: 50%;
     border-radius: 150px;
     box-shadow: rgb(0, 0, 0) 0 1px 5px 0, rgba(255, 255, 255, 0.2) 0 0 1px 0 inset;
@@ -139,71 +138,70 @@ p{
 }
 
 .button.secondary:hover,
-.button.secondary:focus{
+.button.secondary:focus {
     background-color: rgb(43, 43, 43);
 }
 
 /*  值班表  */
 
-.calendar{
+.calendar {
     margin-top: 10px;
     margin-bottom: 80px;
-    padding-top:20px;
+    padding-top: 20px;
     /*padding: 10px;*/
     /*border-top:solid #ffffff 1px;*/
 }
 
-.calendar .tabs a{
+.calendar .tabs a {
     padding: 1.25rem 0.786rem;
 }
 
-.calendar img{
+.calendar img {
     width: 100%;
     box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 1)
 }
 
-
 /*  技能点 */
-.standard{
+.standard {
     background: #000000 url("../img/black_paper.jpg") repeat;
     color: #ffffff;
-    padding:50px;
+    padding: 50px;
     max-width: 79rem;
 }
 
-.limit-width{
+.limit-width {
     max-width: 79rem;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.standard .row{
-    margin-top:50px;
+.standard .row {
+    margin-top: 50px;
 }
 
 /*    下载   */
-.download{
-    margin:60px auto;
+.download {
+    margin: 60px auto;
 }
 
-.download p{
+.download p {
     color: #4c4c4c;
 }
 
 /*  小工具  */
-.tools{
+.tools {
     background-color: #949494;
 }
 
-.tools .row{
+.tools .row {
     margin-bottom: 0;
 }
 
-.tools .columns{
+.tools .columns {
     padding-top: 15px;
     padding-bottom: 6px;
 }
 
-.tools a{
+.tools a {
     display: block;
     width: 40%;
     margin-left: auto;
@@ -213,206 +211,217 @@ p{
     border-radius: 10px;
 }
 
-.tools .tools-title{
+.tools .tools-title {
     float: left;
     width: 50px;
     padding: 0;
     background-color: #4c4c4c;
 }
 
-.inside{
+.inside {
     width: 50px;
     text-align: center;
-    padding:5px;
+    padding: 5px;
     background-color: #a68a9b;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-#webchat{
+#webchat {
     padding-top: 0;
 }
 
-#webchat img{
+#webchat img {
     width: 200px;
     height: 200px;
 }
 
-#webchat a{
+#webchat a {
     width: 200px;
     border: none;
 }
 
 /*  报修方式及网维百科  */
-#wiki{
+#wiki {
     padding: 0 50px;
     border-left: solid #ffffff 1px;
 }
 
-#wiki .row > h4{
+#wiki .row > h4 {
     margin-bottom: 60px;
 }
 
-#exampleModal1{
+#exampleModal1 {
     background-color: #F6F6F6;
 }
 
-#exampleModal1 thead{
+#exampleModal1 thead {
     border: none;
 }
 
 /*  联系方式  */
-.contact{
+.contact {
     padding-top: 80px;
     padding-bottom: 80px;
-    margin-top:70px;
+    margin-top: 70px;
     background: #000000 url("../img/black_paper.jpg") repeat;
     color: #ffffff;
 }
 
-.contact form{
+.contact form {
     margin-left: 6%;
-    margin-top:5%;
+    margin-top: 5%;
 }
 
-.contact label{
+.contact label {
     display: inline-block;
     width: 80%;
     color: #ffffff;
 }
 
-.contact input,.contact textarea{
+.contact input, .contact textarea {
     display: inline-block;
     width: 82%;
     background-color: #797778;
     border-color: #555555;
 }
 
-.contact input:focus,.contact textarea:focus{
+.contact input:focus, .contact textarea:focus {
     background-color: #797778;
 }
 
-.contact form p{
+.contact form p {
     display: inline-block;
     width: 15%;
-    padding-top:0.5rem;
-    vertical-align:top;
+    padding-top: 0.5rem;
+    vertical-align: top;
     font-size: 120%;
 }
 
-.form-error{
+.form-error {
     margin-left: 15%;
 }
 
-.contact button{
-    margin-bottom:25px;
+.contact button {
+    margin-bottom: 25px;
     vertical-align: bottom;
 }
 
-.targetblank{
+.targetblank {
     margin-left: 80px;
 }
 
 /*  表格通用属性  */
-.tabs{
+.tabs {
     /*margin:0 13px;*/
     background-color: #E7E7E7;
     border: none;
     /*border-bottom: solid #E7E7E7 1px;*/
 }
 
-.tabs .is-active a{
+.tabs .is-active a {
     background-color: #E7E7E7;
 }
 
-.tabs a{
+.tabs a {
     background-color: #F6F6F6;
     /*color: #ffffff;*/
 }
 
-.tabs a:hover{
+.tabs a:hover {
     background-color: #B0B0B9;
 }
 
-.tabs-title{
+.tabs-title {
     border: solid #DDDDDD 1px;
 }
 
-.tabs-content{
+.tabs-content {
     background-color: #F6F6F6;
     border: solid #DDDDDD 1px;
 }
 
-
-table thead, table tfoot{
+table thead, table tfoot {
     background-color: #F6F6F6;
     /*color: #ffffff;*/
 }
 
-tr{
+tr {
     background-color: #F6F6F6;
 }
 
-table tbody tr:nth-child(even){
+table tbody tr:nth-child(even) {
     background-color: #0a0a0a;
     color: #ffffff;
 }
 
 /*  icon属性  */
-.feature{
+.feature {
     height: 52px;
     width: 52px;
     background: url('../img/combined.png') no-repeat top left;
 }
 
-.icon1{
+.icon1 {
     background-position: 0 -131px;
 }
 
-.icon2{
+.icon2 {
     background-position: -80px 0;
 }
 
-.icon3{
+.icon3 {
     background-position: 0 -65px;
 }
 
-.icon5{
+.icon5 {
     background-position: -80px -65px;
 }
 
-.icon6{
+.icon6 {
     background-position: -85px -131px;
 }
 
-.icon7{
-    background-position:0 -188px;
+.icon7 {
+    background-position: 0 -188px;
     width: 55px;
     height: 55px;
 }
 
-.icon8{
+.icon8 {
     margin-left: 20px;
     width: 64px;
     height: 64px;
 }
 
-.icon9{
-    margin-top:10px;
+.icon9 {
+    margin-top: 10px;
 }
 
-.icon10{
-    background-position:-80px -250px;
+.icon10 {
+    background-position: -80px -250px;
     width: 55px;
     height: 55px;
 }
 
-.icon11{
-    background-position:-80px -320px;
+.icon11 {
+    background-position: -80px -320px;
     width: 55px;
     height: 55px;
 }
 
-.roww{
+.roww {
     height: 425px;
+}
+
+#baoming1 {
+    background-color: black;
+}
+
+#baoming1 input {
+    background-color: #5e5e5e;
+}
+
+#textarea {
+    background-color: #5e5e5e;
 }
