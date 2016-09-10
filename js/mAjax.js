@@ -10,7 +10,7 @@ function MAjax() {
 
 
     this.getKey = function () {
-        $.get("http://localhost:8888/api/", {}, function (data) {
+        $.get("http://zsxyww.com:8888/api/", {}, function (data) {
             QwQ.key = data.key;
             return data.key;
         });
@@ -24,7 +24,7 @@ function MAjax() {
 
     this.sumbitInfo = function () {
         if(QwQ.getStudentInfo())
-            $.post("http://localhost:8888/api/apply?k=" + QwQ.key, QwQ.getStudentInfo(), function (data) {
+            $.post("http://zsxyww.com:8888/api/apply?k=" + QwQ.key, QwQ.getStudentInfo(), function (data) {
                 if(data.success) {
                     //提交成功
                     ajax.showMessageOnPage("报名成功，敬请期待w", "lightgreen");

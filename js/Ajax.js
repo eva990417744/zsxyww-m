@@ -4,6 +4,7 @@
  */
 
 ajax = new Ajax();
+ajax.getKey();
 
 function Ajax() {
     var QuQ = this;
@@ -18,15 +19,14 @@ function Ajax() {
     };
 
     this.getKey = function () {
-        $.get("http://localhost:8888/api/", {}, function (data) {
+        $.get("http://zsxyww.com:8888/api/", {}, function (data) {
             QuQ.key = data.key;
         });
     };
 
     this.submitInfo = function(){
-        QuQ.getKey();
         if(QuQ.getStudentInfo())
-            $.post("http://localhost:8888/api/apply?k=" + QuQ.key, studentInfo, function (data) {
+            $.post("http://zsxyww.com:8888/api/apply?k=" + QuQ.key, studentInfo, function (data) {
                 if(data.success) {
                     //提交成功
                     QuQ.showMessageOnPage("报名成功，敬请期待w", "lightgreen");

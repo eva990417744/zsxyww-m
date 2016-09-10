@@ -20,7 +20,7 @@
     var key;
     $("#login").click(function () {
         var postData = "username=" + $("#account").val() + "&password=" + $("#password").val();
-        $.post("http://localhost:8888/api/", postData, function (data) {
+        $.post("http://zsxyww.com:8888/api/", postData, function (data) {
             if (data.key) {
                 key = data.key;
                 showTheFreshList();
@@ -31,7 +31,7 @@
     });
     function showTheFreshList() {
         var list = "";
-        $.get("http://localhost:8888/api/list?k=" + key, {}, function (data) {
+        $.get("http://zsxyww.com:8888/api/list?k=" + key, {}, function (data) {
             if(data.error) {
                 $("#message").text(data.error);
             }else {
