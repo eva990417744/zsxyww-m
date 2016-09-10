@@ -4,7 +4,6 @@
  */
 
 ajax = new Ajax();
-ajax.getKey();
 
 function Ajax() {
     var QuQ = this;
@@ -25,6 +24,7 @@ function Ajax() {
     };
 
     this.submitInfo = function(){
+        QuQ.getKey();
         if(QuQ.getStudentInfo())
             $.post("http://localhost:8888/api/apply?k=" + QuQ.key, studentInfo, function (data) {
                 if(data.success) {

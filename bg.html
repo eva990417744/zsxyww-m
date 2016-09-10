@@ -36,18 +36,13 @@
                 $("#message").text(data.error);
             }else {
                 $.each(data,function (n,item) {
-                    list +="<p>Num:"+n+"　Name:"+item.name+"　Tel:"+item.tel+"</p>";
+                    list +="<p>Num:"+(n+1)+"　Name:"+item.name+"　Tel:"+item.tel+"</p>";
                     list += "<p>Remark:" + item.remark + "</p><hr>";
                 });
                 $("#message").html(list);
             }
         });
     }
-
-
-
-
-
 
 </script>
 </html>

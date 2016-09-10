@@ -14,6 +14,11 @@ body {
     display: none;
 }
 
+#showMessage {
+    text-align: center;;
+    display: none;
+}
+
 /*  背景阴影  */
 .background_shadow {
     position: fixed;
