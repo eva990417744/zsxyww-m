@@ -13,7 +13,8 @@
             if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
                 window.location.href = "mindex.html";
             }
-        } catch (e) {}
+        } catch (e) {
+        }
     </script>
 </head>
 <body>
@@ -48,33 +49,33 @@
         <h4>&nbsp;&nbsp;&nbsp;&nbsp;
             网络维护科是由学院信息中心直接领导的学生组织，主要职责包括保障校内师生的正常上网，处理和协助处理校园网出现的各类问题，以及协助处理校园网出现的各类问题，以及协助进行开户等其他相关的工作.</h4>
         <h4 class="hide-for-mobile">&nbsp;&nbsp;&nbsp;&nbsp;一年一度的招新又开始了，欢迎各位大一新生来了解下我们这个团体，了解详情直接点击下面链接。</h4>
-        <div align="center" >
+        <div align="center">
             <a class="secondary button" data-open="baoming1">坐飞机去报名</a>
             <div class="reveal" id="baoming1" data-reveal>
                 <form data-abide action="#">
-                <div data-abide-error class="alert callout" style="display: none;" >
-                    <p><i class="fi-alert"></i> There are some errors in your form.</p>
-                </div>
-                <label>
-                    <p>姓名</p>
-                    <input type="text" required placeholder="请填写真实姓名" name="name">
-                    <span class="form-error">你没有填写昵称</span>
-                </label>
-                <label>
-                    <p>联系电话</p>
-                    <input type="number" required placeholder="常用联系电话" name="tel">
-                    <span class="form-error">输入正确的电话号码</span>
-                </label>
-                <label>
-                    <p>备注</p>
-                    <textarea type="text" cols="500" style="height: 100px;" required
-                              placeholder="可以写写自己的特长什么的" name="remark" id="textarea"></textarea>
-                    <span class="form-error">出错了</span>
-                </label>
-                <button class="button" type="submit" value="Submit">提交</button>
+                    <div data-abide-error class="alert callout" style="display: none;">
+                        <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                    </div>
+                    <label>
+                        <p>姓名</p>
+                        <input type="text" required placeholder="请填写真实姓名" name="name">
+                        <span class="form-error">你没有填写昵称</span>
+                    </label>
+                    <label>
+                        <p>联系电话</p>
+                        <input type="number" required placeholder="常用联系电话" name="tel">
+                        <span class="form-error">输入正确的电话号码</span>
+                    </label>
+                    <label>
+                        <p>备注</p>
+                        <textarea type="text" cols="500" style="height: 100px;" required
+                                  placeholder="可以写写自己的特长什么的" name="remark" id="textarea"></textarea>
+                        <span class="form-error">出错了</span>
+                    </label>
+                    <button class="button" type="submit" value="Submit">提交</button>
                     <button id="bgLogin">后台登陆</button>
 
-            </form>
+                </form>
                 <div id="showMessage">
                     <h1>签到成功</h1>
                 </div>
@@ -94,7 +95,8 @@
                     </button>
                     <li class="is-active orbit-slide">
                         <div>
-                            <a data-open="exampleModal2"><img src="http://odachf3hb.bkt.clouddn.com/loop3.png" style="width:100%"></a>
+                            <a data-open="exampleModal2"><img src="http://odachf3hb.bkt.clouddn.com/loop3.png"
+                                                              style="width:100%"></a>
                             <div class="reveal" id="exampleModal2" data-reveal>
                                 <div class="flex-video">
                                     <iframe src=""
@@ -108,7 +110,8 @@
                     </li>
                     <li class="orbit-slide">
                         <div>
-                            <a data-open="exampleModal3"><img src="http://odachf3hb.bkt.clouddn.com/Loop2.png" style="width:100%"></a>
+                            <a data-open="exampleModal3"><img src="http://odachf3hb.bkt.clouddn.com/Loop2.png"
+                                                              style="width:100%"></a>
                             <div class="reveal" id="exampleModal3" data-reveal>
                                 <div class="flex-video">
                                     <iframe src=""
@@ -122,7 +125,8 @@
                     </li>
                     <li class="orbit-slide">
                         <div>
-                            <a href="guide.html"><img src="http://odachf3hb.bkt.clouddn.com/loop1.png" style="width:100%"></a>
+                            <a href="guide.html"><img src="http://odachf3hb.bkt.clouddn.com/loop1.png"
+                                                      style="width:100%"></a>
                         </div>
                     </li>
                 </ul>
@@ -520,9 +524,8 @@
             <li>帐号无需添加后缀@zsdzkd</li>
             <li>请不要安装任何WIFI共享类软件</li>
             <li>提示无法获取IP等状况请插拔网线</li>
-            <li>如还有问题请报修</li>
-            <a class="secondary button" href="http://enet.10000.gd.cn:10001/qs/app/index.html">点击下载客户端</a>
         </ul>
+        <a class="secondary button" href="http://enet.10000.gd.cn:10001/qs/app/index.html">点击下载客户端</a>
     </div>
     <div class="medium-4 large-4 columns">
         <h4><img src="img/empty.gif" class="feature icon10">PPPOE拨号上网<span><sup>Hot:80°</sup><sub>/10M</sub></span></h4>
@@ -532,8 +535,8 @@
             <li>密码注意不要泄露</li>
             <li>如有问题请报修</li>
             <li>*推荐微信报修</li>
-            <a class="secondary button" href="guide.html">查看设置教程</a>
         </ul>
+        <a class="secondary button" href="guide.html">查看设置教程</a>
     </div>
     <div class="medium-4 large-4 columns">
         <h4><img src="img/empty.gif" class="feature icon11">链接导航<span><sup>Hot:80°</sup><sub></sub></span></h4>
@@ -548,7 +551,7 @@
 </div>
 
 <div class="row roww" id="repairs">
-    <div class="medium-6 large-6 columns" >
+    <div class="medium-6 large-6 columns">
         <h1>&nbsp;网络报修导航</h1>
         <ul class="tabs" data-tabs id="example-tabs2">
             <li class="tabs-title is-active"><a href="#pane1" aria-selected="true">微信报修</a></li>
@@ -556,18 +559,20 @@
             <li class="tabs-title"><a href="#pane3">电话报修</a></li>
             <li class="tabs-title"><a href="#pane4">微博报修</a></li>
         </ul>
-        <div class="tabs-content" data-tabs-content="example-tabs2" >
+        <div class="tabs-content" data-tabs-content="example-tabs2">
             <div class="tabs-panel is-active" id="pane1">
                 <h4>微信报修我们会优先处理</h4>
                 <h4>1:关注微信报修公众号:<span data-tooltip aria-haspopup="true" class="has-tip right"
                                       data-disable-hover='false'
-                                      tabindex=3 title="http://odachf3hb.bkt.clouddn.com/webchat.png">zsxywwbx</span><br>
+                                      tabindex=3
+                                      title="http://odachf3hb.bkt.clouddn.com/webchat.png">zsxywwbx</span><br>
                     2:点击<span data-tooltip aria-haspopup="true" class="has-tip left" data-disable-hover='false'
-                              tabindex=3 title="http://odachf3hb.bkt.clouddn.com/BD.png">绑定微信</span>，<span data-tooltip aria-haspopup="true"
-                                                                              class="has-tip right"
-                                                                              data-disable-hover='false'
-                                                                              tabindex=3
-                                                                              title="http://odachf3hb.bkt.clouddn.com/XX.png">按照流程填写真实数据</span><br>
+                              tabindex=3 title="http://odachf3hb.bkt.clouddn.com/BD.png">绑定微信</span>，<span data-tooltip
+                                                                                                           aria-haspopup="true"
+                                                                                                           class="has-tip right"
+                                                                                                           data-disable-hover='false'
+                                                                                                           tabindex=3
+                                                                                                           title="http://odachf3hb.bkt.clouddn.com/XX.png">按照流程填写真实数据</span><br>
                     3:<span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover='false'
                             tabindex=5 title="http://odachf3hb.bkt.clouddn.com/BX.png">点击报修</span>
                 </h4>
