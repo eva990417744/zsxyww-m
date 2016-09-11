@@ -148,7 +148,10 @@ p {
     padding: 10px;
     border-radius: 10px;
 }
-
+.button{
+    color: white;
+    background-color: #444444;
+}
 .button.secondary {
     width: 50%;
     border-radius: 150px;

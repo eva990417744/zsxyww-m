@@ -24,18 +24,22 @@
         <div class="logo">
             <img src="http://odachf3hb.bkt.clouddn.com/logo.png" style="height: 75px">
         </div>
-        <li role="menuitem"><a href="#calendar" tabindex="0">值班表</a></li>
-        <li role="menuitem"><a href="#feature">技能点</a></li>
-        <li role="menuitem"><a href="#tools">工具</a></li>
+        <li role="menuitem"><a href="javascript:void(0);" tabindex="0" onclick="go('1')">值班表</a></li>
+        <li role="menuitem"><a href="javascript:void(0);" onclick="go('2')">技能点</a></li>
+        <li role="menuitem"><a href="javascript:void(0);" onclick="go('3')">工具</a></li>
         <li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
             aria-expanded="false" aria-label="关于我们">
             <a href="#">关于我们</a>
             <ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true"
                 role="menu">
-                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#repairs">微博&amp;微信</a>
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="javascript:void(0);"
+                                                                                        onclick="go('4')">微博&amp;微信</a>
                 </li>
-                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#repairs">网络报修导航</a></li>
-                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#repairs">网维百科</a></li>
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="javascript:void(0);"
+                                                                                        onclick="go('5')">网络报修导航</a>
+                </li>
+                <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="javascript:void(0);"
+                                                                                        onclick="go('6')">网维百科</a></li>
             </ul>
         </li>
     </ul>
@@ -50,7 +54,7 @@
             网络维护科是由学院信息中心直接领导的学生组织，主要职责包括保障校内师生的正常上网，处理和协助处理校园网出现的各类问题，以及协助处理校园网出现的各类问题，以及协助进行开户等其他相关的工作.</h4>
         <h4 class="hide-for-mobile">&nbsp;&nbsp;&nbsp;&nbsp;一年一度的招新又开始了，欢迎各位大一新生来了解下我们这个团体，了解详情直接点击下面链接。</h4>
         <div align="center">
-            <a class="secondary button" data-open="baoming1">坐飞机去报名</a>
+            <a class=" button" data-open="baoming1">坐飞机去报名</a>
             <div class="reveal" id="baoming1" data-reveal>
                 <form data-abide action="#">
                     <div data-abide-error class="alert callout" style="display: none;">
@@ -525,7 +529,7 @@
             <li>请不要安装任何WIFI共享类软件</li>
             <li>提示无法获取IP等状况请插拔网线</li>
         </ul>
-        <a class="secondary button" href="http://enet.10000.gd.cn:10001/qs/app/index.html">点击下载客户端</a>
+        <a class="button" href="http://enet.10000.gd.cn:10001/qs/app/index.html">点击下载客户端</a>
     </div>
     <div class="medium-4 large-4 columns">
         <h4><img src="img/empty.gif" class="feature icon10">PPPOE拨号上网<span><sup>Hot:80°</sup><sub>/10M</sub></span></h4>
@@ -536,7 +540,7 @@
             <li>如有问题请报修</li>
             <li>*推荐微信报修</li>
         </ul>
-        <a class="secondary button" href="guide.html">查看设置教程</a>
+        <a class="button" href="guide.html">查看设置教程</a>
     </div>
     <div class="medium-4 large-4 columns">
         <h4><img src="img/empty.gif" class="feature icon11">链接导航<span><sup>Hot:80°</sup><sub></sub></span></h4>
@@ -579,7 +583,8 @@
                 <p><a data-open="exampleModal11" class="button">点击查看微信报修视频教程</a></p>
                 <div class="reveal" id="exampleModal11" data-reveal>
                     <div class="flex-video">
-                        <iframe width="420" height="315" src="http://player.youku.com/player.php/sid/XMTcyMDYzNTgyOA==/v.swf" frameborder="0"
+                        <iframe width="420" height="315"
+                                src="http://player.youku.com/player.php/sid/XMTcyMDYzNTgyOA==/v.swf" frameborder="0"
                                 allowfullscreen></iframe>
                     </div>
                     <button class="close-button" data-close aria-label="Close reveal" type="button">
