@@ -1,5 +1,6 @@
 (function () {
-    var maxPage = 6, //  最大页数
+    var page = [],   //  缓存页面
+        maxPage = 6, //  最大页数
         timer,   //  nav-btn的计时器
         index,  //  当前位置
         hammertime;   //  手势
@@ -22,7 +23,7 @@
     //  获得当前位置
     function get_position(num) {
         for (var i = 1; i <= num; ++i) {
-            if ($("#page" + i).css("display") != 'none') {
+            if (page[i].css("display") != 'none') {
                 return i;
             }
         }
@@ -31,8 +32,10 @@
     // nav点击事件
     function click_nav(event) {
         $("#drop-nav").hide();
-        var aim = $(event.target).attr("href").slice(5);
-        change_page(aim, index);
+        var aim = parseInt($(event.target).attr("href").slice(5));
+        if (aim != index) {
+            change_page(aim, index);
+        }
         event.preventDefault();
     }
 
@@ -43,24 +46,24 @@
         var temp = parseInt(nav.css("height"));
         if (temp > 0) {
             timer = setInterval(function () {
-                if (temp < 20) {
+                if (temp <= 35) {
                     nav.css("height", 0);
                     nav.css("display", "none");
                     clearInterval(timer);
                     return;
                 }
-                temp -= 20;
+                temp -= 35;
                 nav.css("height", temp);
             }, 15);
         } else {
             nav.css("display", "block");
             timer = setInterval(function () {
-                if (temp > 150) {
+                if (temp > 160) {
                     nav.css("height", 215);
                     clearInterval(timer);
                     return;
                 }
-                temp += 20;
+                temp += 35;
                 nav.css("height", temp);
             }, 15);
         }
@@ -74,11 +77,14 @@
 
     //  切换页面
     function change_page(aim, current) {
-        $("#page" + current).hide();
-        $("#page" + aim).show();
+        page[current].hide();
+        page[aim].show();
         index = aim;
-        change_gt();
         change_bgimg();
+        if (aim > 1 && current > 1) {
+            return;
+        }
+        change_gt();
     }
 
     //  手势左滑事件
@@ -101,15 +107,18 @@
     $(document).ready(function () {
         hammertime = new Hammer(document.getElementById("swipe"), {
             recognizers: [
-                [Hammer.Swipe]
+                [Hammer.Swipe, {direction: Hammer.DIRECTION_HORIZONTAL}]
             ]
         });
 
         //  初始化各个东西
+        for (var i = 1; i <= maxPage; ++i) {
+            page[i] = $("#page" + i);
+        }
         index = get_position(maxPage);
         change_size();
-        change_gt();
-        change_bgimg();
+        // change_gt();
+        // change_bgimg();
 
         //  手势左滑事件
         hammertime.on("swipeleft", swipeLeft);
