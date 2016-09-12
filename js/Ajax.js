@@ -42,7 +42,7 @@ function Ajax() {
     };
 
     this.login = function () {
-        $.post("http://local:8888/api", account, function (data) {
+        $.post("http://zsxyww.com/api", account, function (data) {
             if(data.key) {
                 QuQ.key = data.key;
             }else {
@@ -52,7 +52,7 @@ function Ajax() {
     };
 
     this.getInfoList = function () {
-        $.get("http://local:8888/api/list?k=" + loginkey, {}, function (data) {
+        $.get("http://zsxyww.com/api/list?k=" + loginkey, {}, function (data) {
             QuQ.freshMenList = data;       //获取报名新生数据
         });
     };
