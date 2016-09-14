@@ -54,7 +54,7 @@
                 }
                 temp -= 35;
                 nav.css("height", temp);
-            }, 15);
+            }, 33.33);
         } else {
             nav.css("display", "block");
             timer = setInterval(function () {
@@ -65,7 +65,7 @@
                 }
                 temp += 35;
                 nav.css("height", temp);
-            }, 15);
+            }, 33.33);
         }
     }
 
