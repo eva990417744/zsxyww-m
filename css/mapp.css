@@ -204,3 +204,7 @@ nav a:hover, nav a:focus {
 #roster .tab-content {
     margin-top: 10px;
 }
+
+.player {
+    background-color: rgba(255,255,255,.3);
+}

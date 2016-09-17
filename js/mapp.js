@@ -143,9 +143,18 @@
 
     });
 })();
-// var $videoModal1=$();
 $('#youku1').on('hidden.bs.modal', function () {
     $('#test1').attr('src', '')
 }).on('show.bs.modal',function () {
     $('#test1').attr('src','http://player.youku.com/embed/XMTYzNDcyNzg1Mg==');
+});
+$('#youku').on('hidden.bs.modal', function () {
+    $('#test').attr('src', '')
+}).on('show.bs.modal',function () {
+    $('#test').attr('src','http://player.youku.com/embed/XMTcyNzQ1NjM1Mg==');
+});
+$('#youku2').on('hidden.bs.modal', function () {
+    $('#test2').attr('src', '')
+}).on('show.bs.modal',function () {
+    $('#test2').attr('src','http://player.youku.com/embed/XMTYzNDcyNzg1Mg==');
 });
