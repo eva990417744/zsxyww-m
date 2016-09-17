@@ -121,6 +121,10 @@ nav a:hover, nav a:focus {
     color: #ffffff;
 }
 
+#repair > div{
+    min-height: 500px;
+}
+
 #repair .nav li {
     width: 25%;
 }
@@ -164,7 +168,7 @@ nav a:hover, nav a:focus {
     background-position: -78px -402px;
 }
 
-/*  list-group-iteml 栏  */
+/*  page5 栏  */
 .list-group-item {
     text-align: left;
     color: #ffffff;
@@ -205,6 +209,12 @@ nav a:hover, nav a:focus {
     margin-top: 10px;
 }
 
+/*   player 栏    */
+.modal .modal-content{
+    margin: 50% 0;
+    background-color: rgba(230,230,230,.7);
+}
+
 .player {
-    background-color: rgba(255,255,255,.3);
+    /*background-color: rgba(255,255,255,.3);*/
 }
