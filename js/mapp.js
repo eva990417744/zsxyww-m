@@ -147,5 +147,5 @@
 $('#youku1').on('hidden.bs.modal', function () {
     $('#test1').attr('src', '')
 }).on('show.bs.modal',function () {
-    $('#test1').attr('src','http://player.youku.com/embed/XMTYzNDcyNzg1Mg==');
+    $('#test1').attr('src','http://player.youku.com/embed/XMTcyMDYzNTgyOA==');
 });
