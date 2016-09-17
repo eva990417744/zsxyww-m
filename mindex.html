@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>中山学院网络维护科</title>
     <link rel="icon" href="http://odabryy5t.bkt.clouddn.com/img/128x128.ico">
-    <link rel="stylesheet" href="http://odabryy5t.bkt.clouddn.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="http://odabryy5t.bkt.clouddn.com/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="http://odabryy5t.bkt.clouddn.com/css/mapp.css">
     <script src="http://odabryy5t.bkt.clouddn.com/js/vendor/jquery.js"></script>
@@ -51,7 +51,8 @@
                         <h4>维基百科</h4>
                         <p>
                             <a href="http://wiki.sola.love" target="_blank">
-                                <img src="http://odabryy5t.bkt.clouddn.com/img/wikipedialogo.png" width="80%" height="80%">
+                                <img src="http://odabryy5t.bkt.clouddn.com/img/wikipedialogo.png" width="80%"
+                                     height="80%">
                             </a>
                         </p>
                     </div>
@@ -88,13 +89,12 @@
                             </div>
                         </div>
                         <div class="item">
-                            <img src="http://odabryy5t.bkt.clouddn.com/img/Loop2.png" alt="...">
-                            <div class="carousel-caption">
-
-                            </div>
+                            <img src="http://odabryy5t.bkt.clouddn.com/img/Loop2.png" alt="..." data-toggle="modal"
+                                 data-target="#youku1">
                         </div>
                         <div class="item">
-                            <a href="guide.html"><img src="http://odabryy5t.bkt.clouddn.com/img/loop1.png" alt="..." ></a>
+                            <a href="guide.html"><img src="http://odabryy5t.bkt.clouddn.com/img/loop1.png"
+                                                      alt="..."></a>
                         </div>
                     </div>
                     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -109,983 +109,1015 @@
             </div>
             <div class="col-xs-0 col-sm-2"></div>
         </div>
-        <div class="row">
-            <div class="col-xs-0 col-sm-3"></div>
-            <div class="col-xs-12 col-sm-6">
-                <div class="input-group">
-                    <P>一年一度的招新又开始了，欢迎各位大一新生来了解下我们这个团体。填写下面表单可以报名加入我们。</P>
-                    <input type="text" class="form-control" id="name" placeholder="名字">
-                    <input type="number" class="form-control" id="tel" placeholder="联系电话">
-                    <input type="text" class="form-control" id="remark" placeholder="备注">
-                    <p id="showMessage">报名成功</p>
+        <div class="modal fade" id="youku1" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
-                <div style="text-align: left"><button class="btn btn-default" id="sumbitBtn">提交</button></div>
-            </div>
-            <div class="col-xs-0 col-sm-3"></div>
-        </div>
-    </div>
-    <div id="page3">
-        <div class="row" id="repair">
-            <div class="col-xs-10 col-xs-offset-1">
-                <h1>报修导航</h1>
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#webchat" role="tab" data-toggle="tab">微信</a></li>
-                    <li role="presentation"><a href="#paper" role="tab" data-toggle="tab">纸质</a></li>
-                    <li role="presentation"><a href="#phone" role="tab" data-toggle="tab">电话</a></li>
-                    <li role="presentation"><a href="#blog" role="tab" data-toggle="tab">微博</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="webchat">微信报修我们会优先处理<br>
-                        1:关注微信报修公众号:zsxywwbx<br>
-                        2:点击绑定微信，按照流程填写真实数据<br>
-                        3:点击报修<br>
-                        <div class="embed-responsive embed-responsive-4by3">
-                            <iframe class="embed-responsive-item" src=""></iframe>
-                        </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item"
+                                src='http://player.youku.com/embed/XMTYzNDcyNzg1Mg=='
+                                id="test1"
+                        ></iframe>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="paper">
-                        各个宿管处都有我们的报修表和宿管说明你要网络报修<br>
-                        <ul class="list-group">
-                            <li class="list-group-item list-group-item-success">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        栋数
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        报修地点
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-info">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        1-6栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        凤翔宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-warning">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        7栋，9栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        7，9栋楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        8栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        8栋楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        10栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        10栋楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        11栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        11栋楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        12栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        12栋楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        13栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        13栋楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        14，15栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        14栋楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        16栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        16栋楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        17栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        17栋楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        18，19栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        18栋楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        20，21栋
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-5 col-sm-6">
-                                        香灰
-                                    </div>
-                                    <div class="col-xs-7 col-sm-6">
-                                        楼下宿管
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="phone">
-                        <h4>请尽可能按照周内值班时间点负责人进行电话报修,如果联系不上,请联系周内其他负责人。</h4>
-                        <ul class="list-group">
-                            <li class="list-group-item list-group-item-success">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6">
-                                        信息中心
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6">
-                                        88332760
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-info">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6">
-                                        周一:叶江南
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6">
-                                        18928187450
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-warning">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6">
-                                        周二:刘越
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6">
-                                        18928187469
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6">
-                                        周三:蔡哲宏
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6">
-                                        18928187463
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6">
-                                        周四:曾家兴
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6">
-                                        18928187455
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6">
-                                        周五:麦晓达
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6">
-                                        18928187466
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6">
-                                        周六:许佳培
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6">
-                                        18928187459
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6">
-                                        周日:周文娣
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6">
-                                        18928187460
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-group-item-danger">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6">
-                                        投诉:王广鹏
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6">
-                                        18928187471
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="blog">
-                        <h4>关注我们的微博 私信给我们电话号码宿舍号等信息,也可报修。</h4>
-                        <a href="http://weibo.com/zsxyww?topnav=1&wvr=6&topsug=1&is_all=1"><img src="http://odabryy5t.bkt.clouddn.com/img/wb.png"
-                                                                                                width="80%"
-                                                                                                height="80%"></a>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
-    <div id="page4">
-        <div class="row" id="convenient">
-            <h2>便携下载</h2>
-            <div class="col-sm-4 col-xs-1"></div>
-            <div class="col-xs-11 col-sm-6">
-                <div class="media">
-                    <a class="media-left" href="#">
-                        <img src="http://odabryy5t.bkt.clouddn.com/img/empty.gif" alt="...">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">天翼校园客户端</h4>
-                        <li>帐号无需添加后缀@zsdzkd</li>
-                        <li>请不要安装任何WIFI共享类软件</li>
-                        <li>提示无法获取IP等状况请插拔网线</li>
-                        <a href="http://enet.10000.gd.cn:10001/qs/app/index.html">
-                            <button type="button" class="btn btn-default">下载客户端</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="media">
-                    <a class="media-left" href="#">
-                        <img src="http://odabryy5t.bkt.clouddn.com/img/empty.gif" alt="...">
-                    </a>
-                    <div class="media-body">
-                        <h4>PPPOE拨号上网</h4>
-                        <p>联通和移动的用户直接拨号上网即可.</p>
-                        <li>注意账号需要添加后缀</li>
-                        <li>密码注意不要泄露</li>
-                        <li>*推荐微信报修</li>
-                        <button type="button" class="btn btn-default">查看PPPOE教程</button>
-                    </div>
-                </div>
-                <div class="media">
-                    <a class="media-left" href="#">
-                        <img src="http://odabryy5t.bkt.clouddn.com/img/empty.gif" alt="...">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">链接导航</h4>
-                        <li><a href="http://util.sola.love/yue.html">电信余额查询</a></li>
-                        <li><a href="http://gd.189.cn/webpay/chongzhi/czindex.jsp">宽带充值</a></li>
-                        <li><a href="http://www2.zsc.edu.cn/xxzx">信息中心官方网址</a></li>
-                        <li><a href="http://jwgl.zsc.edu.cn:90/">学院教务管理</a></li>
-                        <li><a href="http://util.sola.love/cet">英语四，六级成绩查询</a></li>
-                    </div>
-                </div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-3"></div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="input-group">
+                <P>一年一度的招新又开始了，欢迎各位大一新生来了解下我们这个团体。填写下面表单可以报名加入我们。</P>
+                <input type="text" class="form-control" id="name" placeholder="名字">
+                <input type="number" class="form-control" id="tel" placeholder="联系电话">
+                <input type="text" class="form-control" id="remark" placeholder="备注">
+                <p id="showMessage">报名成功</p>
             </div>
-            <div class="col-sm-2 "></div>
+            <div style="text-align: left">
+                <button class="btn btn-default" id="sumbitBtn">提交</button>
+            </div>
         </div>
+        <div class="col-xs-0 col-sm-3"></div>
     </div>
-    <div id="page5">
-        <h2>值班表</h2>
-        <div class="row" id="roster">
+</div>
+<div id="page3">
+    <div class="row" id="repair">
+        <div class="col-xs-10 col-xs-offset-1">
+            <h1>报修导航</h1>
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#mon" role="tab" data-toggle="tab">周一</a></li>
-                <li role="presentation"><a href="#tues" role="tab" data-toggle="tab">周二</a></li>
-                <li role="presentation"><a href="#wed" role="tab" data-toggle="tab">周三</a></li>
-                <li role="presentation"><a href="#thur" role="tab" data-toggle="tab">周四</a></li>
-                <li role="presentation"><a href="#fri" role="tab" data-toggle="tab">周五</a></li>
-                <li role="presentation"><a href="#sat" role="tab" data-toggle="tab">周六</a></li>
-                <li role="presentation"><a href="#sun" role="tab" data-toggle="tab">周日</a></li>
+                <li role="presentation" class="active"><a href="#webchat" role="tab" data-toggle="tab">微信</a></li>
+                <li role="presentation"><a href="#paper" role="tab" data-toggle="tab">纸质</a></li>
+                <li role="presentation"><a href="#phone" role="tab" data-toggle="tab">电话</a></li>
+                <li role="presentation"><a href="#blog" role="tab" data-toggle="tab">微博</a></li>
             </ul>
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="mon">
+                <div role="tabpanel" class="tab-pane active" id="webchat">微信报修我们会优先处理<br>
+                    1:关注微信报修公众号:zsxywwbx<br>
+                    2:点击绑定微信，按照流程填写真实数据<br>
+                    3:点击报修<br>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="embed-responsive embed-responsive-4by3">
+                                <iframe class="embed-responsive-item"
+
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="paper">
+                    各个宿管处都有我们的报修表和宿管说明你要网络报修<br>
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-success">
-                            <p style="text-align: center">
-                                周一值班组长:叶江南-18928187450
-                            </p>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    值班地区
+                                <div class="col-xs-5 col-sm-6">
+                                    栋数
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    姓名
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    联系电话
+                                <div class="col-xs-7 col-sm-6">
+                                    报修地点
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-info">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    1--6栋
+                                <div class="col-xs-5 col-sm-6">
+                                    1-6栋
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    郑灿彬
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187477
+                                <div class="col-xs-7 col-sm-6">
+                                    凤翔宿管
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-warning">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    7--11栋
+                                <div class="col-xs-5 col-sm-6">
+                                    7栋，9栋
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    赵芃
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187481
+                                <div class="col-xs-7 col-sm-6">
+                                    7，9栋楼下宿管
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-danger">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    12-15, 20、21栋
+                                <div class="col-xs-5 col-sm-6">
+                                    8栋
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    陈芮
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187470
+                                <div class="col-xs-7 col-sm-6">
+                                    8栋楼下宿管
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-danger">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    16--19栋
+                                <div class="col-xs-5 col-sm-6">
+                                    10栋
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    刘伯奇
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    报修请联系组长
+                                <div class="col-xs-7 col-sm-6">
+                                    10栋楼下宿管
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-danger">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    香晖苑
+                                <div class="col-xs-5 col-sm-6">
+                                    11栋
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    郭嘉慧<br> 何宇森
+                                <div class="col-xs-7 col-sm-6">
+                                    11栋楼下宿管
                                 </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187479
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-danger">
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-6">
+                                    12栋
+                                </div>
+                                <div class="col-xs-7 col-sm-6">
+                                    12栋楼下宿管
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-danger">
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-6">
+                                    13栋
+                                </div>
+                                <div class="col-xs-7 col-sm-6">
+                                    13栋楼下宿管
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-danger">
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-6">
+                                    14，15栋
+                                </div>
+                                <div class="col-xs-7 col-sm-6">
+                                    14栋楼下宿管
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-danger">
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-6">
+                                    16栋
+                                </div>
+                                <div class="col-xs-7 col-sm-6">
+                                    16栋楼下宿管
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-danger">
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-6">
+                                    17栋
+                                </div>
+                                <div class="col-xs-7 col-sm-6">
+                                    17栋楼下宿管
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-danger">
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-6">
+                                    18，19栋
+                                </div>
+                                <div class="col-xs-7 col-sm-6">
+                                    18栋楼下宿管
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-danger">
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-6">
+                                    20，21栋
+                                </div>
+                                <div class="col-xs-7 col-sm-6">
+                                    楼下宿管
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-danger">
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-6">
+                                    香灰
+                                </div>
+                                <div class="col-xs-7 col-sm-6">
+                                    楼下宿管
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="tues">
+                <div role="tabpanel" class="tab-pane" id="phone">
+                    <h4>请尽可能按照周内值班时间点负责人进行电话报修,如果联系不上,请联系周内其他负责人。</h4>
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-success">
-                            <p style="text-align: center">
-                                周二值班组长:刘越-18928187469
-                            </p>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    值班地区
+                                <div class="col-xs-6 col-sm-6">
+                                    信息中心
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    姓名
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    联系电话
+                                <div class="col-xs-6 col-sm-6">
+                                    88332760
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-info">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    1--6栋
+                                <div class="col-xs-6 col-sm-6">
+                                    周一:叶江南
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    李楚鹏<br>
-                                    王震
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187472
+                                <div class="col-xs-6 col-sm-6">
+                                    18928187450
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-warning">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    7--11栋
+                                <div class="col-xs-6 col-sm-6">
+                                    周二:刘越
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    周琳滔
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187462
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    12-15、20、21栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    黄琪真
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187480
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    16--19栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    高思诚
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    报修请联系组长
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    香晖苑
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    刘越
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
+                                <div class="col-xs-6 col-sm-6">
                                     18928187469
                                 </div>
                             </div>
                         </li>
-                    </ul>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="wed">
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-success">
-                            <p style="text-align: center">
-                                周三值班组长:蔡哲宏-18928187463
-                            </p>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-danger">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    值班地区
+                                <div class="col-xs-6 col-sm-6">
+                                    周三:蔡哲宏
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    姓名
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    联系电话
+                                <div class="col-xs-6 col-sm-6">
+                                    18928187463
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-danger">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    1--6栋
+                                <div class="col-xs-6 col-sm-6">
+                                    周四:曾家兴
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    姜子麒
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187454
+                                <div class="col-xs-6 col-sm-6">
+                                    18928187455
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-danger">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    7--11栋
+                                <div class="col-xs-6 col-sm-6">
+                                    周五:麦晓达
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    文晓新
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    报修请联系组长
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    12-15、20、21栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    罗星华
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187467
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    16--19栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    周文娣
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187460
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    香晖苑
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    程楚婷芮<br>卢泓宇
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187456<br> 18928180137
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="thur">
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-success">
-                            <p style="text-align: center">
-                                周四值班组长:曾家兴-18928187455
-                            </p>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    值班地区
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    姓名
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    联系电话
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    1--6栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    杨光<br> 陈珊珊
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187465<br> 18928187458
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    7--11栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    梁浩均<br> 曹征晖
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187451
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    12-15、20、21栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    李传德
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187482
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    16--19栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    李昂
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187464
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    香晖苑
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    蔡培焕
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    报修请联系组长
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="fri">
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-success">
-                            <p style="text-align: center">
-                                周五值班组长:麦晓达-18928187466
-                            </p>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    值班地区
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    姓名
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    联系电话
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    1--6栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    沙子森
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187476
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    7--11栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    朱宇超
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    报修请联系组长
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    12-15、20、21栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    徐集涵
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187452
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    16--19栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    佘佳殷
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187473
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    香晖苑
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    麦晓达<br> 黄雯婷
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
+                                <div class="col-xs-6 col-sm-6">
                                     18928187466
                                 </div>
                             </div>
                         </li>
-                    </ul>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="sat">
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-success">
-                            <p style="text-align: center">
-                                周六值班组长:许佳培-18928187459
-                            </p>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-danger">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    值班地区
+                                <div class="col-xs-6 col-sm-6">
+                                    周六:许佳培
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    姓名
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    联系电话
+                                <div class="col-xs-6 col-sm-6">
+                                    18928187459
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-danger">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    1--6栋
+                                <div class="col-xs-6 col-sm-6">
+                                    周日:周文娣
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    郭绍铭
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187475
+                                <div class="col-xs-6 col-sm-6">
+                                    18928187460
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item list-group-item-success">
+                        <li class="list-group-item list-group-item-danger">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    7--11栋
+                                <div class="col-xs-6 col-sm-6">
+                                    投诉:王广鹏
                                 </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    王俊杰
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    报修请联系组长
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    12-15、20、21栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    郑锦琪
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    报修请联系组长
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    16--19栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    李沅霖
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    报修请联系组长
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    香晖苑
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    唐聚生<br> 全精精
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187457<br> 18928187453
+                                <div class="col-xs-6 col-sm-6">
+                                    18928187471
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="sun">
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-success">
-                            <p style="text-align: center">
-                                周日值班组长:周文娣-18928187460
-                            </p>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    值班地区
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    姓名
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    联系电话
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    1--6栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    刘金家
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187483
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    7--11栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    王子民<br> 周名海
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187474<br> 18928187478
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    12-15、20、21栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    陈坚荣
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187485
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    16--19栋
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    谢理成
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    18928187484
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item list-group-item-success">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4">
-                                    香晖苑
-                                </div>
-                                <div class="col-xs-3 col-sm-4">
-                                    黄恩<br> 周俊盛
-                                </div>
-                                <div class="col-xs-5 col-sm-4">
-                                    报修请联系组长
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                <div role="tabpanel" class="tab-pane" id="blog">
+                    <h4>关注我们的微博 私信给我们电话号码宿舍号等信息,也可报修。</h4>
+                    <a href="http://weibo.com/zsxyww?topnav=1&wvr=6&topsug=1&is_all=1"><img
+                            src="http://odabryy5t.bkt.clouddn.com/img/wb.png"
+                            width="80%"
+                            height="80%"></a>
                 </div>
             </div>
         </div>
     </div>
-    <div id="page6">
-        <div class="row" id="address">
-            <h2>办公地址</h2>
-            <h3>信息中心：</h3>
-            <p>电子科技大学中山学院<br>实验楼B幢207室</p>
-            <p>Tel:(+86) 0760-88332760</p>
-            <a href="#">admin@zsxyww.com</a>
-            <p><br>
-                <a target="_blank"
-                   href="https://maps.google.com/maps?f=d&source=s_d&saddr=22.524386,113.389535&daddr=&hl=zh-cn&geocode=&sll=22.524638,113.389949&sspn=0.002165,0.004128&vpsrc=0&mra=mift&mrsp=0&sz=19&ie=UTF8&t=m&z=19&iwloc=ddw0">
-                    <img src="http://odabryy5t.bkt.clouddn.com/img/location.jpg" width="70%" height="70%">
+</div>
+<div id="page4">
+    <div class="row" id="convenient">
+        <h2>便携下载</h2>
+        <div class="col-sm-4 col-xs-1"></div>
+        <div class="col-xs-11 col-sm-6">
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img src="http://odabryy5t.bkt.clouddn.com/img/empty.gif" alt="...">
                 </a>
-            </p>
+                <div class="media-body">
+                    <h4 class="media-heading">天翼校园客户端</h4>
+                    <li>帐号无需添加后缀@zsdzkd</li>
+                    <li>请不要安装任何WIFI共享类软件</li>
+                    <li>提示无法获取IP等状况请插拔网线</li>
+                    <a href="http://enet.10000.gd.cn:10001/qs/app/index.html">
+                        <button type="button" class="btn btn-default">下载客户端</button>
+                    </a>
+                </div>
+            </div>
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img src="http://odabryy5t.bkt.clouddn.com/img/empty.gif" alt="...">
+                </a>
+                <div class="media-body">
+                    <h4>PPPOE拨号上网</h4>
+                    <p>联通和移动的用户直接拨号上网即可.</p>
+                    <li>注意账号需要添加后缀</li>
+                    <li>密码注意不要泄露</li>
+                    <li>*推荐微信报修</li>
+                    <button type="button" class="btn btn-default">查看PPPOE教程</button>
+                </div>
+            </div>
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img src="http://odabryy5t.bkt.clouddn.com/img/empty.gif" alt="...">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">链接导航</h4>
+                    <li><a href="http://util.sola.love/yue.html">电信余额查询</a></li>
+                    <li><a href="http://gd.189.cn/webpay/chongzhi/czindex.jsp">宽带充值</a></li>
+                    <li><a href="http://www2.zsc.edu.cn/xxzx">信息中心官方网址</a></li>
+                    <li><a href="http://jwgl.zsc.edu.cn:90/">学院教务管理</a></li>
+                    <li><a href="http://util.sola.love/cet">英语四，六级成绩查询</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 "></div>
+    </div>
+</div>
+<div id="page5">
+    <h2>值班表</h2>
+    <div class="row" id="roster">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#mon" role="tab" data-toggle="tab">周一</a></li>
+            <li role="presentation"><a href="#tues" role="tab" data-toggle="tab">周二</a></li>
+            <li role="presentation"><a href="#wed" role="tab" data-toggle="tab">周三</a></li>
+            <li role="presentation"><a href="#thur" role="tab" data-toggle="tab">周四</a></li>
+            <li role="presentation"><a href="#fri" role="tab" data-toggle="tab">周五</a></li>
+            <li role="presentation"><a href="#sat" role="tab" data-toggle="tab">周六</a></li>
+            <li role="presentation"><a href="#sun" role="tab" data-toggle="tab">周日</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="mon">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                        <p style="text-align: center">
+                            周一值班组长:叶江南-18928187450
+                        </p>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                值班地区
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                姓名
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                联系电话
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                1--6栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                郑灿彬
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187477
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                7--11栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                赵芃
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187481
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                12-15, 20、21栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                陈芮
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187470
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                16--19栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                刘伯奇
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                报修请联系组长
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                香晖苑
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                郭嘉慧<br> 何宇森
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187479
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tues">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                        <p style="text-align: center">
+                            周二值班组长:刘越-18928187469
+                        </p>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                值班地区
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                姓名
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                联系电话
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                1--6栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                李楚鹏<br>
+                                王震
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187472
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                7--11栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                周琳滔
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187462
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                12-15、20、21栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                黄琪真
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187480
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                16--19栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                高思诚
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                报修请联系组长
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                香晖苑
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                刘越
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187469
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="wed">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                        <p style="text-align: center">
+                            周三值班组长:蔡哲宏-18928187463
+                        </p>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                值班地区
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                姓名
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                联系电话
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                1--6栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                姜子麒
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187454
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                7--11栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                文晓新
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                报修请联系组长
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                12-15、20、21栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                罗星华
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187467
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                16--19栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                周文娣
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187460
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                香晖苑
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                程楚婷芮<br>卢泓宇
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187456<br> 18928180137
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="thur">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                        <p style="text-align: center">
+                            周四值班组长:曾家兴-18928187455
+                        </p>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                值班地区
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                姓名
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                联系电话
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                1--6栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                杨光<br> 陈珊珊
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187465<br> 18928187458
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                7--11栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                梁浩均<br> 曹征晖
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187451
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                12-15、20、21栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                李传德
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187482
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                16--19栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                李昂
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187464
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                香晖苑
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                蔡培焕
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                报修请联系组长
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="fri">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                        <p style="text-align: center">
+                            周五值班组长:麦晓达-18928187466
+                        </p>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                值班地区
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                姓名
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                联系电话
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                1--6栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                沙子森
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187476
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                7--11栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                朱宇超
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                报修请联系组长
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                12-15、20、21栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                徐集涵
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187452
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                16--19栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                佘佳殷
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187473
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                香晖苑
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                麦晓达<br> 黄雯婷
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187466
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="sat">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                        <p style="text-align: center">
+                            周六值班组长:许佳培-18928187459
+                        </p>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                值班地区
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                姓名
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                联系电话
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                1--6栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                郭绍铭
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187475
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                7--11栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                王俊杰
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                报修请联系组长
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                12-15、20、21栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                郑锦琪
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                报修请联系组长
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                16--19栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                李沅霖
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                报修请联系组长
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                香晖苑
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                唐聚生<br> 全精精
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187457<br> 18928187453
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="sun">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">
+                        <p style="text-align: center">
+                            周日值班组长:周文娣-18928187460
+                        </p>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                值班地区
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                姓名
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                联系电话
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                1--6栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                刘金家
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187483
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                7--11栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                王子民<br> 周名海
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187474<br> 18928187478
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                12-15、20、21栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                陈坚荣
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187485
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                16--19栋
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                谢理成
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                18928187484
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                香晖苑
+                            </div>
+                            <div class="col-xs-3 col-sm-4">
+                                黄恩<br> 周俊盛
+                            </div>
+                            <div class="col-xs-5 col-sm-4">
+                                报修请联系组长
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
+<div id="page6">
+    <div class="row" id="address">
+        <h2>办公地址</h2>
+        <h3>信息中心：</h3>
+        <p>电子科技大学中山学院<br>实验楼B幢207室</p>
+        <p>Tel:(+86) 0760-88332760</p>
+        <a href="#">admin@zsxyww.com</a>
+        <p><br>
+            <a target="_blank"
+               href="https://maps.google.com/maps?f=d&source=s_d&saddr=22.524386,113.389535&daddr=&hl=zh-cn&geocode=&sll=22.524638,113.389949&sspn=0.002165,0.004128&vpsrc=0&mra=mift&mrsp=0&sz=19&ie=UTF8&t=m&z=19&iwloc=ddw0">
+                <img src="http://odabryy5t.bkt.clouddn.com/img/location.jpg" width="70%" height="70%">
+            </a>
+        </p>
+    </div>
+</div>
+</div>
 <script src="http://odabryy5t.bkt.clouddn.com/js/hammer.min.js"></script>
-<script src="http://odabryy5t.bkt.clouddn.com/js/mapp_min.js"></script>
+<script src="js/mapp.js"></script>
 <script src="http://odabryy5t.bkt.clouddn.com/js/mAjax.js"></script>
 </body>
 </html>
