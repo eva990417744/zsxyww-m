@@ -17,7 +17,7 @@
 
     //  改变背景图片
     function change_bgimg() {
-        $("#background_img").attr("src", "img/bg" + index + ".jpg")
+        $("#background_img").attr("src", "http://odabryy5t.bkt.clouddn.com/img/bg" + index + ".jpg")
     }
 
     //  获得当前位置
