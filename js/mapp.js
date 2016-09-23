@@ -146,6 +146,7 @@
 $('#youku1').on('hidden.bs.modal', function () {
     $('#test1').attr('src', '')
 }).on('show.bs.modal',function () {
+<<<<<<< HEAD
     $('#test1').attr('src','http://player.youku.com/embed/XMTYzNDcyNzg1Mg==');
 });
 $('#youku').on('hidden.bs.modal', function () {
@@ -157,4 +158,7 @@ $('#youku2').on('hidden.bs.modal', function () {
     $('#test2').attr('src', '')
 }).on('show.bs.modal',function () {
     $('#test2').attr('src','http://player.youku.com/embed/XMTYzNDcyNzg1Mg==');
+=======
+    $('#test1').attr('src','http://player.youku.com/embed/XMTcyMDYzNTgyOA==');
+>>>>>>> dev
 });
