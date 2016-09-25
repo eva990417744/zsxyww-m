@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>中山学院网络维护科</title>
+    <!--<script type="text/javascript">-->
+    <!--try {-->
+    <!--if (!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {-->
+    <!--window.location.href = "index.html";-->
+    <!--}-->
+    <!--} catch (e) {-->
+    <!--}-->
+    <!--</script>-->
     <link rel="icon" href="http://odabryy5t.bkt.clouddn.com/img/128x128.ico">
     <link rel="stylesheet" href="http://odabryy5t.bkt.clouddn.com/css/bootstrap.css">
-    <link rel="stylesheet" href="http://odabryy5t.bkt.clouddn.com/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="http://odabryy5t.bkt.clouddn.com/css/mapp.css">
-    <script src="http://odabryy5t.bkt.clouddn.com/js/vendor/jquery.js"></script>
-    <script src="http://odabryy5t.bkt.clouddn.com/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="http://odabryy5t.bkt.clouddn.com/css/bootstrap-theme.min.css">-->
+    <link rel="stylesheet" href="css/mapp.css">
 </head>
 <body>
 <div class="background_shadow"></div>
@@ -74,11 +80,11 @@
             <div class="col-xs-0 col-sm-2"></div>
             <div class="col-xs-12 col-sm-8">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
+                    <!--<ol class="carousel-indicators">-->
+                        <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+                        <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+                        <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+                    <!--</ol>-->
 
                     <div class="carousel-inner" role="listbox">
 
@@ -107,7 +113,6 @@
             </div>
             <div class="col-xs-0 col-sm-2"></div>
         </div>
-<<<<<<< HEAD
         <div class="row">
             <div class="col-xs-0 col-sm-3"></div>
             <div class="col-xs-12 col-sm-6">
@@ -117,26 +122,27 @@
                     <input type="number" class="form-control" id="tel" placeholder="联系电话">
                     <input type="text" class="form-control" id="remark" placeholder="备注">
                     <p id="showMessage">报名成功</p>
-=======
-        <div class="modal fade" id="youku1" tabindex="-1" role="dialog"
-             aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span
-                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="embed-responsive embed-responsive-16by9">
-                       <iframe class="embed-responsive-item" src='http://player.youku.com/embed/XMTcyMDYzNTgyOA==' frameborder=0 'allowfullscreen' id="test1"></iframe>           
+                    <!--<div class="modal fade" id="youku1" tabindex="-1" role="dialog"-->
+                    <!--aria-labelledby="myModalLabel" aria-hidden="true">-->
+                    <!--<div class="modal-content">-->
+                    <!--<div class="modal-header">-->
+                    <!--<button type="button" class="close" data-dismiss="modal"><span-->
+                    <!--aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
+                    <!--<h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+                    <!--</div>-->
+                    <!--<div class="modal-body">-->
+                    <!--<div class="embed-responsive embed-responsive-16by9">-->
+                    <!--<iframe class="embed-responsive-item"-->
+                    <!--src='http://player.youku.com/embed/XMTcyMDYzNTgyOA==' frameborder=0-->
+                    <!--'allowfullscreen' id="test1"></iframe>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div style="text-align: left">
+                        <button class="btn btn-default" id="sumbitBtn">提交</button>
                     </div>
->>>>>>> dev
                 </div>
-                <div style="text-align: left">
-                    <button class="btn btn-default" id="sumbitBtn">提交</button>
-                </div>
+                <div class="col-xs-0 col-sm-3"></div>
             </div>
-            <div class="col-xs-0 col-sm-3"></div>
         </div>
     </div>
     <div id="page3">
@@ -144,7 +150,8 @@
             <div class="col-xs-10 col-xs-offset-1">
                 <h1>报修导航</h1>
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#webchat" role="tab" data-toggle="tab">微信</a></li>
+                    <li role="presentation" class="active"><a href="#webchat" role="tab" data-toggle="tab">微信</a>
+                    </li>
                     <li role="presentation"><a href="#paper" role="tab" data-toggle="tab">纸质</a></li>
                     <li role="presentation"><a href="#phone" role="tab" data-toggle="tab">电话</a></li>
                     <li role="presentation"><a href="#blog" role="tab" data-toggle="tab">微博</a></li>
@@ -154,7 +161,8 @@
                         1:关注微信报修公众号:zsxywwbx<br>
                         2:点击绑定微信，按照流程填写真实数据<br>
                         3:点击报修<br>
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#youku2">
+                        <button type="button" class="btn btn-default" data-toggle="modal"
+                                data-target="#youku2">
                             查看报修视频教程
                         </button>
                     </div>
@@ -438,7 +446,9 @@
                         <li>注意账号需要添加后缀</li>
                         <li>密码注意不要泄露</li>
                         <li>*推荐微信报修</li>
-                        <a href="guide.html"><button type="button" class="btn btn-default">查看PPPOE教程</button></a>
+                        <a href="guide.html">
+                            <button type="button" class="btn btn-default">查看PPPOE教程</button>
+                        </a>
                     </div>
                 </div>
                 <div class="media">
@@ -462,7 +472,8 @@
         <h2>值班表</h2>
         <div class="row" id="roster">
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#mon" role="tab" data-toggle="tab">周一</a></li>
+                <li role="presentation" class="active"><a href="#mon" role="tab" data-toggle="tab">周一</a>
+                </li>
                 <li role="presentation"><a href="#tues" role="tab" data-toggle="tab">周二</a></li>
                 <li role="presentation"><a href="#wed" role="tab" data-toggle="tab">周三</a></li>
                 <li role="presentation"><a href="#thur" role="tab" data-toggle="tab">周四</a></li>
@@ -1106,7 +1117,6 @@
         <div class="modal-body">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                        src='http://player.youku.com/embed/XMTcyNzQ1NjM1Mg=='
                         id="test"
                 ></iframe>
             </div>
@@ -1119,7 +1129,6 @@
         <div class="modal-body player">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                        src='http://player.youku.com/embed/XMTYzNDcyNzg1Mg=='
                         id="test1"
                 ></iframe>
             </div>
@@ -1133,15 +1142,16 @@
         <div class="modal-content">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                        src='http://player.youku.com/embed/XMTYzNDcyNzg1Mg=='
                         id="test2"
                 ></iframe>
             </div>
         </div>
     </div>
 </div>
-</body>
+<script src="http://odabryy5t.bkt.clouddn.com/js/vendor/jquery.js"></script>
+<script src="http://odabryy5t.bkt.clouddn.com/js/bootstrap.min.js"></script>
 <script src="http://odabryy5t.bkt.clouddn.com/js/hammer.min.js"></script>
-<script src="http://odabryy5t.bkt.clouddn.com/js/mapp_min.js"></script>
+<script src="js/mapp.js"></script>
 <script src="http://odabryy5t.bkt.clouddn.com/js/mAjax.js"></script>
+</body>
 </html>

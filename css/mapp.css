@@ -144,7 +144,7 @@ nav a:hover, nav a:focus {
 #convenient img {
     width: 52px;
     background: url("../img/combined.png") no-repeat top left;
-    background-position: 0 -430px;
+    background-position: 0 -345px;
 }
 
 #convenient .col-xs-11 {
@@ -161,7 +161,7 @@ nav a:hover, nav a:focus {
 }
 
 #convenient .media:first-child img{
-    background-position: 0 -345px;
+    background-position: 0 -430px;
 }
 
 #convenient .media:last-child img{

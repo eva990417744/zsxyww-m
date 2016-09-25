@@ -22,6 +22,7 @@ function go(num) {
 // iframe开启和关闭事件
 var $videoModal = $('#exampleModal3 > div > iframe');
 var $videoModal1 = $('#exampleModal11>div>iframe');
+var $videoModal2 = $('#exampleModal2 > div > iframe');
 $('#exampleModal3').on('open.zf.reveal', function () {
     $videoModal.attr('src', 'http://player.youku.com/player.php/sid/XMTcyMDYzNTgyOA==/v.swf');
 }).on('closed.zf.reveal', function () {
@@ -31,4 +32,9 @@ $('#exampleModal11').on('open.zf.reveal', function () {
     $videoModal1.attr('src', 'http://player.youku.com/player.php/sid/XMTcyMDYzNTgyOA==/v.swf');
 }).on('closed.zf.reveal', function () {
     $videoModal1.attr('src', '');
+});
+$('#exampleModal2').on('open.zf.reveal', function () {
+    $videoModal2.attr('src', 'http://player.youku.com/embed/XMTcyNzQ1NjM1Mg==');
+}).on('closed.zf.reveal', function () {
+    $videoModal2.attr('src', '');
 });
