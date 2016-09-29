@@ -46,26 +46,26 @@
         var temp = parseInt(nav.css("height"));
         if (temp > 0) {
             timer = setInterval(function () {
-                if (temp <= 35) {
+                if (temp <= 15) {
                     nav.css("height", 0);
                     nav.css("display", "none");
                     clearInterval(timer);
                     return;
                 }
-                temp -= 35;
+                temp -= 10;
                 nav.css("height", temp);
-            }, 33.33);
+            }, 16.67);
         } else {
             nav.css("display", "block");
             timer = setInterval(function () {
-                if (temp > 160) {
+                if (temp > 200) {
                     nav.css("height", 215);
                     clearInterval(timer);
                     return;
                 }
-                temp += 35;
+                temp += 10;
                 nav.css("height", temp);
-            }, 33.33);
+            }, 16.67);
         }
     }
 
@@ -141,24 +141,21 @@
             event.preventDefault();
         });
 
+        $('#youku1').on('hidden.bs.modal', function () {
+            $('#test1').attr('src', '')
+        }).on('show.bs.modal',function () {
+            $('#test1').attr('src','http://player.youku.com/embed/XMTcyMDYzNTgyOA==');
+        });
+        $('#youku').on('hidden.bs.modal', function () {
+            $('#test').attr('src', '')
+        }).on('show.bs.modal',function () {
+            $('#test').attr('src','http://player.youku.com/embed/XMTcyNzQ1NjM1Mg==');
+        });
+        $('#youku2').on('hidden.bs.modal', function () {
+            $('#test2').attr('src', '')
+        }).on('show.bs.modal',function () {
+            $('#test2').attr('src','http://player.youku.com/embed/XMTcyMDYzNTgyOA==');
+            $('#test1').attr('src','http://player.youku.com/embed/XMTcyMDYzNTgyOA==');
+        });
     });
 })();
-$('#youku1').on('hidden.bs.modal', function () {
-    $('#test1').attr('src', '')
-}).on('show.bs.modal',function () {
-// <<<<<<< HEAD
-    $('#test1').attr('src','http://player.youku.com/embed/XMTcyMDYzNTgyOA==');
-});
-$('#youku').on('hidden.bs.modal', function () {
-    $('#test').attr('src', '')
-}).on('show.bs.modal',function () {
-    $('#test').attr('src','http://player.youku.com/embed/XMTcyNzQ1NjM1Mg==');
-});
-$('#youku2').on('hidden.bs.modal', function () {
-    $('#test2').attr('src', '')
-}).on('show.bs.modal',function () {
-    $('#test2').attr('src','http://player.youku.com/embed/XMTcyMDYzNTgyOA==');
-// =======
-    $('#test1').attr('src','http://player.youku.com/embed/XMTcyMDYzNTgyOA==');
-// >>>>>>> dev
-});

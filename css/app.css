@@ -381,7 +381,7 @@ table tbody tr:nth-child(even) {
 .feature {
     height: 52px;
     width: 52px;
-    background: url('../img/combined.png') no-repeat top left;
+    background: url('../img/combined1.png') no-repeat top left;
 }
 
 .icon1 {
@@ -411,12 +411,15 @@ table tbody tr:nth-child(even) {
 }
 
 .icon8 {
-    margin-left: 20px;
     width: 64px;
     height: 64px;
+    background-position: -70px -180px;
+    margin-left: 20px;
 }
 
 .icon9 {
+    height: 72px;
+    background-position: 0 -250px;
     margin-top: 10px;
 }
 
@@ -430,6 +433,24 @@ table tbody tr:nth-child(even) {
     background-position: -80px -320px;
     width: 55px;
     height: 55px;
+}
+
+.icon12 {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -500px;
+}
+
+.icon13 {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -625px;
+}
+
+.icon14 {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -745px;
 }
 
 .roww {

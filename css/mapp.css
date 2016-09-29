@@ -64,6 +64,7 @@ body {
 /*   导航栏    */
 nav {
     text-align: center;
+    overflow: hidden;
 }
 
 nav ul {
