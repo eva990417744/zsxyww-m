@@ -4,6 +4,7 @@
         timer,   //  nav-btn的计时器
         index,  //  当前位置
         hammertime;   //  手势
+    var majax;   // Ajax
 
     //  改变视口大小时的调整
     function change_size() {
@@ -17,10 +18,10 @@
 
     //  改变背景图片
     function change_bgimg() {
-        $("#background_img").attr("src", "http://odabryy5t.bkt.clouddn.com/img/bg" + index + ".jpg")
+        $("#background_img").attr("src", "img/m_bg" + index + ".jpg")
     }
 
-    //  获得当前位置
+    //  获得当前位置m_
     function get_position(num) {
         for (var i = 1; i <= num; ++i) {
             if (page[i].css("display") != 'none') {
@@ -103,6 +104,41 @@
         change_page(index - 1, index);
     }
 
+    //  Ajax
+    function MAjax() {
+        var QwQ = this;
+
+        this.getKey = function () {
+            $.get("http://zsxyww.com:8888/api/", {}, function (data) {
+                QwQ.key = data.key;
+                return data.key;
+            });
+        };
+        this.getStudentInfo = function () {
+            var infoData = "name=" + $("#name").val()
+                + "&tel=" + $("#tel").val()
+                + "&remark=" + $("#remark").val();
+            return infoData;
+        };
+
+        this.sumbitInfo = function () {
+            if(QwQ.getStudentInfo())
+                $.post("http://zsxyww.com:8888/api/apply?k=" + QwQ.key, QwQ.getStudentInfo(), function (data) {
+                    if(data.success) {
+                        //提交成功
+                        ajax.showMessageOnPage("报名成功，敬请期待w", "lightgreen");
+                    }else {
+                        //提交失败，显示错误信息
+                        ajax.showMessageOnPage("报名失败：" + data.error,"red");
+                    }
+                }, "json");
+            else
+                ajax.showMessageOnPage("输入信息异常，检查后重新输入","red");
+
+            return false;
+        };
+    }
+
 
     $(document).ready(function () {
         hammertime = new Hammer(document.getElementById("swipe"), {
@@ -115,6 +151,7 @@
         for (var i = 1; i <= maxPage; ++i) {
             page[i] = $("#page" + i);
         }
+        majax = new MAjax();
         index = get_position(maxPage);
         change_size();
         // change_gt();
@@ -140,6 +177,9 @@
             change_page(1, index);
             event.preventDefault();
         });
+
+        majax.getKey();
+        $("#sumbitBtn").click(QwQ.sumbitInfo);
 
         $('#youku1').on('hidden.bs.modal', function () {
             $('#test1').attr('src', '')

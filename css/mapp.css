@@ -57,8 +57,11 @@ body {
 #go_top {
     position: fixed;
     display: none;
+    width: 24px;
+    height:24px;
     right: 2%;
     bottom: 2%;
+    background: url("../img/combined1.png") no-repeat 0 -858px;
 }
 
 /*   导航栏    */
@@ -144,7 +147,7 @@ nav a:hover, nav a:focus {
 /*  convenient栏   */
 #convenient img {
     width: 52px;
-    background: url("../img/combined.png") no-repeat top left;
+    background: url("../img/combined1.png") no-repeat top left;
     background-position: 0 -345px;
 }
 
